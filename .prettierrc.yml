@@ -14,3 +14,7 @@ overrides:
     options:
       semi: true
       bracketSameLine: true
+plugins:
+  - prettier-plugin-organize-attributes
+  - prettier-plugin-organize-imports
+  - prettier-plugin-tailwindcss" # Needs to be at end of the list
