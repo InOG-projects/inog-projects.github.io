@@ -11,3 +11,9 @@ bundle exec jekyll serve --host localhost --port 4000 --open-url
 ```
 bundle exec htmlproofer --assume_extension '.html' ./_site
 ```
+
+## Rubocop
+
+```
+bundle exec rubocop
+```
