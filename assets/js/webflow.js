@@ -804,7 +804,13 @@
       Object.defineProperty(exports, '__esModule', {
         value: true
       });
-      exports.IX2VanillaUtils = exports.IX2VanillaPlugins = exports.IX2ElementsReducer = exports.IX2EasingUtils = exports.IX2Easings = exports.IX2BrowserSupport = void 0;
+      exports.IX2VanillaUtils =
+        exports.IX2VanillaPlugins =
+        exports.IX2ElementsReducer =
+        exports.IX2EasingUtils =
+        exports.IX2Easings =
+        exports.IX2BrowserSupport =
+          void 0;
 
       var IX2BrowserSupport = _interopRequireWildcard(__webpack_require__(48));
 
@@ -2513,9 +2519,12 @@
         var last = funcs[funcs.length - 1];
         var rest = funcs.slice(0, -1);
         return function () {
-          return rest.reduceRight(function (composed, f) {
-            return f(composed);
-          }, last.apply(undefined, arguments));
+          return rest.reduceRight(
+            function (composed, f) {
+              return f(composed);
+            },
+            last.apply(undefined, arguments)
+          );
         };
       }
 
@@ -2530,7 +2539,13 @@
       Object.defineProperty(exports, '__esModule', {
         value: true
       });
-      exports.TRANSFORM_STYLE_PREFIXED = exports.TRANSFORM_PREFIXED = exports.FLEX_PREFIXED = exports.ELEMENT_MATCHES = exports.withBrowser = exports.IS_BROWSER_ENV = void 0;
+      exports.TRANSFORM_STYLE_PREFIXED =
+        exports.TRANSFORM_PREFIXED =
+        exports.FLEX_PREFIXED =
+        exports.ELEMENT_MATCHES =
+        exports.withBrowser =
+        exports.IS_BROWSER_ENV =
+          void 0;
 
       var _find = _interopRequireDefault(__webpack_require__(95));
       /* eslint-env browser */
@@ -2549,9 +2564,12 @@
 
       exports.withBrowser = withBrowser;
       var ELEMENT_MATCHES = withBrowser(function () {
-        return (0, _find['default'])(['matches', 'matchesSelector', 'mozMatchesSelector', 'msMatchesSelector', 'oMatchesSelector', 'webkitMatchesSelector'], function (key) {
-          return key in Element.prototype;
-        });
+        return (0, _find['default'])(
+          ['matches', 'matchesSelector', 'mozMatchesSelector', 'msMatchesSelector', 'oMatchesSelector', 'webkitMatchesSelector'],
+          function (key) {
+            return key in Element.prototype;
+          }
+        );
       });
       exports.ELEMENT_MATCHES = ELEMENT_MATCHES;
       var FLEX_PREFIXED = withBrowser(function () {
@@ -3861,7 +3879,10 @@
             'ease-in-out-back': [
               'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
               function (a, b, c, d, e) {
-                return void 0 === e && (e = 1.70158), (a /= d / 2) < 1 ? (c / 2) * a * a * (((e *= 1.525) + 1) * a - e) + b : (c / 2) * ((a -= 2) * a * (((e *= 1.525) + 1) * a + e) + 2) + b;
+                return (
+                  void 0 === e && (e = 1.70158),
+                  (a /= d / 2) < 1 ? (c / 2) * a * a * (((e *= 1.525) + 1) * a - e) + b : (c / 2) * ((a -= 2) * a * (((e *= 1.525) + 1) * a + e) + 2) + b
+                );
               }
             ]
           },
@@ -3927,7 +3948,8 @@
         }
 
         var J = (b.frame = (function () {
-            var a = p.requestAnimationFrame || p.webkitRequestAnimationFrame || p.mozRequestAnimationFrame || p.oRequestAnimationFrame || p.msRequestAnimationFrame;
+            var a =
+              p.requestAnimationFrame || p.webkitRequestAnimationFrame || p.mozRequestAnimationFrame || p.oRequestAnimationFrame || p.msRequestAnimationFrame;
             return a && G.bind
               ? a.bind(p)
               : function (a) {
@@ -4062,7 +4084,9 @@
             function l(a) {
               this.timer && this.timer.destroy(), (this.queue = []), (this.active = !1);
               var b;
-              'string' == typeof a ? ((b = {}), (b[a] = 1)) : (b = 'object' == (0, _typeof2['default'])(a) && null != a ? a : this.props), u.call(this, b, v), t.call(this);
+              'string' == typeof a ? ((b = {}), (b[a] = 1)) : (b = 'object' == (0, _typeof2['default'])(a) && null != a ? a : this.props),
+                u.call(this, b, v),
+                t.call(this);
             }
 
             function m(a) {
@@ -4107,7 +4131,10 @@
                 k = {};
 
               for (f in a) {
-                (h = a[f]), f in Z ? (k.transform || (k.transform = {}), (k.transform[f] = h)) : (s.test(f) && (f = c(f)), f in Y ? (k[f] = h) : (i || (i = {}), (i[f] = h)));
+                (h = a[f]),
+                  f in Z
+                    ? (k.transform || (k.transform = {}), (k.transform[f] = h))
+                    : (s.test(f) && (f = c(f)), f in Y ? (k[f] = h) : (i || (i = {}), (i[f] = h)));
               }
 
               for (f in k) {
@@ -4152,7 +4179,15 @@
             }
 
             (b.init = function (b) {
-              if (((this.$el = a(b)), (this.el = this.$el[0]), (this.props = {}), (this.queue = []), (this.style = ''), (this.active = !1), U.keepInherited && !U.fallback)) {
+              if (
+                ((this.$el = a(b)),
+                (this.el = this.$el[0]),
+                (this.props = {}),
+                (this.queue = []),
+                (this.style = ''),
+                (this.active = !1),
+                U.keepInherited && !U.fallback)
+              ) {
                 var c = W(this.el, 'transition');
                 c && !z.test(c) && (this.upstream = c);
               }
@@ -4232,7 +4267,8 @@
                 U.fallback || e.fallback
                   ? (this.animate = this.fallback)
                   : ((this.animate = this.transition),
-                    (this.string = this.name + B + this.duration + 'ms' + ('ease' != this.ease ? B + m[this.ease][0] : '') + (this.delay ? B + this.delay + 'ms' : '')));
+                    (this.string =
+                      this.name + B + this.duration + 'ms' + ('ease' != this.ease ? B + m[this.ease][0] : '') + (this.delay ? B + this.delay + 'ms' : '')));
             }),
               (a.set = function (a) {
                 (a = this.convert(a, this.type)), this.update(a), this.redraw();
@@ -4347,7 +4383,11 @@
 
             (a.init = function () {
               b.init.apply(this, arguments),
-                this.current || ((this.current = {}), Z.perspective && U.perspective && ((this.current.perspective = U.perspective), V(this.el, this.name, this.style(this.current)), this.redraw()));
+                this.current ||
+                  ((this.current = {}),
+                  Z.perspective &&
+                    U.perspective &&
+                    ((this.current.perspective = U.perspective), V(this.el, this.name, this.style(this.current)), this.redraw()));
             }),
               (a.set = function (a) {
                 c.call(this, a, function (a, b) {
@@ -4482,13 +4522,22 @@
 
                 if (c < this.duration) {
                   var d = this.ease(c, 0, 1, this.duration);
-                  return (b = this.startRGB ? k(this.startRGB, this.endRGB, d) : j(this.begin + d * this.change)), (this.value = b + this.unit), void this.update.call(this.context, this.value);
+                  return (
+                    (b = this.startRGB ? k(this.startRGB, this.endRGB, d) : j(this.begin + d * this.change)),
+                    (this.value = b + this.unit),
+                    void this.update.call(this.context, this.value)
+                  );
                 }
 
-                (b = this.endHex || this.begin + this.change), (this.value = b + this.unit), this.update.call(this.context, this.value), this.complete.call(this.context), this.destroy();
+                (b = this.endHex || this.begin + this.change),
+                  (this.value = b + this.unit),
+                  this.update.call(this.context, this.value),
+                  this.complete.call(this.context),
+                  this.destroy();
               }),
               (b.format = function (a, b) {
-                if (((b += ''), (a += ''), '#' == a.charAt(0))) return (this.startRGB = d(b)), (this.endRGB = d(a)), (this.endHex = a), (this.begin = 0), void (this.change = 1);
+                if (((b += ''), (a += ''), '#' == a.charAt(0)))
+                  return (this.startRGB = d(b)), (this.endRGB = d(a)), (this.endHex = a), (this.begin = 0), void (this.change = 1);
 
                 if (!this.unit) {
                   var c = b.replace(r, ''),
@@ -5098,7 +5147,10 @@
        * // => true
        */
       function isPlainObject(value) {
-        if (!Object(_isObjectLike_js__WEBPACK_IMPORTED_MODULE_2__['default'])(value) || Object(_baseGetTag_js__WEBPACK_IMPORTED_MODULE_0__['default'])(value) != objectTag) {
+        if (
+          !Object(_isObjectLike_js__WEBPACK_IMPORTED_MODULE_2__['default'])(value) ||
+          Object(_baseGetTag_js__WEBPACK_IMPORTED_MODULE_0__['default'])(value) != objectTag
+        ) {
           return false;
         }
         var proto = Object(_getPrototype_js__WEBPACK_IMPORTED_MODULE_1__['default'])(value);
@@ -5141,13 +5193,17 @@
         var actionType = action && action.type;
         var actionName = (actionType && '"' + actionType.toString() + '"') || 'an action';
 
-        return 'Given action ' + actionName + ', reducer "' + key + '" returned undefined. ' + 'To ignore an action, you must explicitly return the previous state.';
+        return (
+          'Given action ' + actionName + ', reducer "' + key + '" returned undefined. ' + 'To ignore an action, you must explicitly return the previous state.'
+        );
       }
 
       function getUnexpectedStateShapeWarningMessage(inputState, reducers, action, unexpectedKeyCache) {
         var reducerKeys = Object.keys(reducers);
         var argumentName =
-          action && action.type === _createStore__WEBPACK_IMPORTED_MODULE_0__['ActionTypes'].INIT ? 'preloadedState argument passed to createStore' : 'previous state received by the reducer';
+          action && action.type === _createStore__WEBPACK_IMPORTED_MODULE_0__['ActionTypes'].INIT
+            ? 'preloadedState argument passed to createStore'
+            : 'previous state received by the reducer';
 
         if (reducerKeys.length === 0) {
           return 'Store does not have a valid reducer. Make sure the argument passed ' + 'to combineReducers is an object whose values are reducers.';
@@ -6707,7 +6763,14 @@
         value: true
       });
       exports.isPluginType = isPluginType;
-      exports.clearPlugin = exports.renderPlugin = exports.createPluginInstance = exports.getPluginDestination = exports.getPluginDuration = exports.getPluginOrigin = exports.getPluginConfig = void 0;
+      exports.clearPlugin =
+        exports.renderPlugin =
+        exports.createPluginInstance =
+        exports.getPluginDestination =
+        exports.getPluginDuration =
+        exports.getPluginOrigin =
+        exports.getPluginConfig =
+          void 0;
 
       var _IX2LottieUtils = __webpack_require__(267);
 
@@ -7580,8 +7643,8 @@
               (itemConfig === null || itemConfig === void 0
                 ? void 0
                 : (_itemConfig$target = itemConfig.target) === null || _itemConfig$target === void 0
-                ? void 0
-                : _itemConfig$target.useEventTarget) === true
+                  ? void 0
+                  : _itemConfig$target.useEventTarget) === true
                 ? {
                     target: event.target,
                     targets: event.targets
@@ -7718,7 +7781,10 @@
         } // Identify first animated group and apply the initial QuickEffect delay
 
         var isFirstGroup = groupIndex === 0 || (groupIndex === 1 && useFirstGroupAsInitialState);
-        var instanceDelay = isFirstGroup && isQuickEffect((_event$action = event.action) === null || _event$action === void 0 ? void 0 : _event$action.actionTypeId) ? event.config.delay : undefined; // Abort playback if no action items exist at group index
+        var instanceDelay =
+          isFirstGroup && isQuickEffect((_event$action = event.action) === null || _event$action === void 0 ? void 0 : _event$action.actionTypeId)
+            ? event.config.delay
+            : undefined; // Abort playback if no action items exist at group index
 
         var actionItems = (0, _get['default'])(actionItemGroups, [groupIndex, 'actionItems'], []);
 
@@ -8221,7 +8287,9 @@
               marginRight: '8px',
               width: '16px'
             });
-            var $logoText = $('<img>').attr('src', 'https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg').attr('alt', 'Made in Webflow');
+            var $logoText = $('<img>')
+              .attr('src', 'https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg')
+              .attr('alt', 'Made in Webflow');
             $brand.append($logoArt, $logoText);
             return $brand[0];
           }
@@ -8573,7 +8641,10 @@
           if (!settings && oldSettings) settings = oldSettings;
           settings = _.defaults({}, settings, _.templateSettings); // Combine delimiters into one regular expression via alternation.
 
-          var matcher = RegExp([(settings.escape || noMatch).source, (settings.interpolate || noMatch).source, (settings.evaluate || noMatch).source].join('|') + '|$', 'g'); // Compile the template source, escaping string literals appropriately.
+          var matcher = RegExp(
+            [(settings.escape || noMatch).source, (settings.interpolate || noMatch).source, (settings.evaluate || noMatch).source].join('|') + '|$',
+            'g'
+          ); // Compile the template source, escaping string literals appropriately.
 
           var index = 0;
           var source = "__p+='";
@@ -11984,7 +12055,9 @@
         }
         if (isSameTag && !objIsObj) {
           stack || (stack = new Stack());
-          return objIsArr || isTypedArray(object) ? equalArrays(object, other, bitmask, customizer, equalFunc, stack) : equalByTag(object, other, objTag, bitmask, customizer, equalFunc, stack);
+          return objIsArr || isTypedArray(object)
+            ? equalArrays(object, other, bitmask, customizer, equalFunc, stack)
+            : equalByTag(object, other, objTag, bitmask, customizer, equalFunc, stack);
         }
         if (!(bitmask & COMPARE_PARTIAL_FLAG)) {
           var objIsWrapped = objIsObj && hasOwnProperty.call(object, '__wrapped__'),
@@ -12755,7 +12828,9 @@
         }
         return function (object) {
           var objValue = get(object, path);
-          return objValue === undefined && objValue === srcValue ? hasIn(object, path) : baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG);
+          return objValue === undefined && objValue === srcValue
+            ? hasIn(object, path)
+            : baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG);
         };
       }
 
@@ -13458,7 +13533,14 @@
       Object.defineProperty(exports, '__esModule', {
         value: true
       });
-      exports.clearPlugin = exports.renderPlugin = exports.createPluginInstance = exports.getPluginDestination = exports.getPluginOrigin = exports.getPluginDuration = exports.getPluginConfig = void 0;
+      exports.clearPlugin =
+        exports.renderPlugin =
+        exports.createPluginInstance =
+        exports.getPluginDestination =
+        exports.getPluginOrigin =
+        exports.getPluginDuration =
+        exports.getPluginConfig =
+          void 0;
       /* eslint-env browser */
       // $FlowFixMe
 
@@ -13857,10 +13939,10 @@
             event === null || event === void 0
               ? void 0
               : (_event$action = event.action) === null || _event$action === void 0
-              ? void 0
-              : (_event$action$config = _event$action.config) === null || _event$action$config === void 0
-              ? void 0
-              : _event$action$config.affectedElements) !== null && _ref !== void 0
+                ? void 0
+                : (_event$action$config = _event$action.config) === null || _event$action$config === void 0
+                  ? void 0
+                  : _event$action$config.affectedElements) !== null && _ref !== void 0
             ? _ref
             : {};
         var override = overrides[id || selector] || {};
@@ -14338,7 +14420,16 @@
                 return ''.concat(SCALE_3D, '(').concat(xValue).concat(xUnit, ', ').concat(yValue).concat(yUnit, ', ').concat(zValue).concat(zUnit, ')');
 
               case TRANSFORM_ROTATE:
-                return ''.concat(ROTATE_X, '(').concat(xValue).concat(xUnit, ') ').concat(ROTATE_Y, '(').concat(yValue).concat(yUnit, ') ').concat(ROTATE_Z, '(').concat(zValue).concat(zUnit, ')');
+                return ''
+                  .concat(ROTATE_X, '(')
+                  .concat(xValue)
+                  .concat(xUnit, ') ')
+                  .concat(ROTATE_Y, '(')
+                  .concat(yValue)
+                  .concat(yUnit, ') ')
+                  .concat(ROTATE_Z, '(')
+                  .concat(zValue)
+                  .concat(zUnit, ')');
 
               case TRANSFORM_SKEW:
                 return ''.concat(SKEW, '(').concat(xValue).concat(xUnit, ', ').concat(yValue).concat(yUnit, ')');
@@ -14462,7 +14553,9 @@
             setStyle(
               element,
               prop,
-              aValue >= 1 ? 'rgb('.concat(rValue, ',').concat(gValue, ',').concat(bValue, ')') : 'rgba('.concat(rValue, ',').concat(gValue, ',').concat(bValue, ',').concat(aValue, ')')
+              aValue >= 1
+                ? 'rgb('.concat(rValue, ',').concat(gValue, ',').concat(bValue, ')')
+                : 'rgba('.concat(rValue, ',').concat(gValue, ',').concat(bValue, ',').concat(aValue, ')')
             );
             break;
           }
@@ -16339,7 +16432,10 @@
         if (value == null) {
           return true;
         }
-        if (isArrayLike(value) && (isArray(value) || typeof value == 'string' || typeof value.splice == 'function' || isBuffer(value) || isTypedArray(value) || isArguments(value))) {
+        if (
+          isArrayLike(value) &&
+          (isArray(value) || typeof value == 'string' || typeof value.splice == 'function' || isBuffer(value) || isTypedArray(value) || isArguments(value))
+        ) {
           return !value.length;
         }
         var tag = getTag(value);
@@ -17864,7 +17960,13 @@
             var funcName = getFuncName(func),
               data = funcName == 'wrapper' ? getData(func) : undefined;
 
-            if (data && isLaziable(data[0]) && data[1] == (WRAP_ARY_FLAG | WRAP_CURRY_FLAG | WRAP_PARTIAL_FLAG | WRAP_REARG_FLAG) && !data[4].length && data[9] == 1) {
+            if (
+              data &&
+              isLaziable(data[0]) &&
+              data[1] == (WRAP_ARY_FLAG | WRAP_CURRY_FLAG | WRAP_PARTIAL_FLAG | WRAP_REARG_FLAG) &&
+              !data[4].length &&
+              data[9] == 1
+            ) {
               wrapper = wrapper[getFuncName(data[0])].apply(wrapper, data[3]);
             } else {
               wrapper = func.length == 1 && isLaziable(func) ? wrapper[funcName]() : wrapper.thru(func);
@@ -21750,7 +21852,18 @@ Webflow.require('ix2').init({
       mediaQueries: ['main'],
       target: { id: '5fc25a3797a8f4c9b2226ec5', appliesTo: 'PAGE', styleBlockIds: [] },
       targets: [{ id: '5fc25a3797a8f4c9b2226ec5', appliesTo: 'PAGE', styleBlockIds: [] }],
-      config: [{ continuousParameterGroupId: 'a-p', smoothing: 50, startsEntering: true, addStartOffset: false, addOffsetValue: 50, startsExiting: false, addEndOffset: false, endOffsetValue: 50 }],
+      config: [
+        {
+          continuousParameterGroupId: 'a-p',
+          smoothing: 50,
+          startsEntering: true,
+          addStartOffset: false,
+          addOffsetValue: 50,
+          startsExiting: false,
+          addEndOffset: false,
+          endOffsetValue: 50
+        }
+      ],
       createdOn: 1582807763188
     },
     'e-2': {
@@ -21758,7 +21871,11 @@ Webflow.require('ix2').init({
       name: '',
       animationType: 'custom',
       eventTypeId: 'MOUSE_CLICK',
-      action: { id: '', actionTypeId: 'GENERAL_START_ACTION', config: { delay: 0, easing: '', duration: 0, actionListId: 'a-2', affectedElements: {}, playInReverse: false, autoStopEventId: 'e-3' } },
+      action: {
+        id: '',
+        actionTypeId: 'GENERAL_START_ACTION',
+        config: { delay: 0, easing: '', duration: 0, actionListId: 'a-2', affectedElements: {}, playInReverse: false, autoStopEventId: 'e-3' }
+      },
       mediaQueries: ['main', 'medium', 'small', 'tiny'],
       target: { selector: '.block-faqs-bg', originalId: '5fc25a3797a8f4c9b2226ec5|b9bbef86-799a-4710-e692-42a40c0c56f5', appliesTo: 'CLASS' },
       targets: [{ selector: '.block-faqs-bg', originalId: '5fc25a3797a8f4c9b2226ec5|b9bbef86-799a-4710-e692-42a40c0c56f5', appliesTo: 'CLASS' }],
@@ -21770,7 +21887,11 @@ Webflow.require('ix2').init({
       name: '',
       animationType: 'custom',
       eventTypeId: 'MOUSE_SECOND_CLICK',
-      action: { id: '', actionTypeId: 'GENERAL_START_ACTION', config: { delay: 0, easing: '', duration: 0, actionListId: 'a-3', affectedElements: {}, playInReverse: false, autoStopEventId: 'e-2' } },
+      action: {
+        id: '',
+        actionTypeId: 'GENERAL_START_ACTION',
+        config: { delay: 0, easing: '', duration: 0, actionListId: 'a-3', affectedElements: {}, playInReverse: false, autoStopEventId: 'e-2' }
+      },
       mediaQueries: ['main', 'medium', 'small', 'tiny'],
       target: { selector: '.block-faqs-bg', originalId: '5fc25a3797a8f4c9b2226ec5|b9bbef86-799a-4710-e692-42a40c0c56f5', appliesTo: 'CLASS' },
       targets: [{ selector: '.block-faqs-bg', originalId: '5fc25a3797a8f4c9b2226ec5|b9bbef86-799a-4710-e692-42a40c0c56f5', appliesTo: 'CLASS' }],
@@ -21786,7 +21907,18 @@ Webflow.require('ix2').init({
       mediaQueries: ['main'],
       target: { id: '5fc25a3797a8f400e5226ed0', appliesTo: 'PAGE', styleBlockIds: [] },
       targets: [{ id: '5fc25a3797a8f400e5226ed0', appliesTo: 'PAGE', styleBlockIds: [] }],
-      config: [{ continuousParameterGroupId: 'a-p', smoothing: 50, startsEntering: true, addStartOffset: false, addOffsetValue: 50, startsExiting: false, addEndOffset: false, endOffsetValue: 50 }],
+      config: [
+        {
+          continuousParameterGroupId: 'a-p',
+          smoothing: 50,
+          startsEntering: true,
+          addStartOffset: false,
+          addOffsetValue: 50,
+          startsExiting: false,
+          addEndOffset: false,
+          endOffsetValue: 50
+        }
+      ],
       createdOn: 1583241087931
     },
     'e-8': {
@@ -21798,7 +21930,18 @@ Webflow.require('ix2').init({
       mediaQueries: ['main'],
       target: { id: '5fc25a3797a8f4c0a8226ec8', appliesTo: 'PAGE', styleBlockIds: [] },
       targets: [{ id: '5fc25a3797a8f4c0a8226ec8', appliesTo: 'PAGE', styleBlockIds: [] }],
-      config: [{ continuousParameterGroupId: 'a-p', smoothing: 50, startsEntering: true, addStartOffset: false, addOffsetValue: 50, startsExiting: false, addEndOffset: false, endOffsetValue: 50 }],
+      config: [
+        {
+          continuousParameterGroupId: 'a-p',
+          smoothing: 50,
+          startsEntering: true,
+          addStartOffset: false,
+          addOffsetValue: 50,
+          startsExiting: false,
+          addEndOffset: false,
+          endOffsetValue: 50
+        }
+      ],
       createdOn: 1583241129422
     },
     'e-16': {
@@ -21806,7 +21949,11 @@ Webflow.require('ix2').init({
       name: '',
       animationType: 'custom',
       eventTypeId: 'PAGE_START',
-      action: { id: '', actionTypeId: 'GENERAL_START_ACTION', config: { delay: 0, easing: '', duration: 0, actionListId: 'a-4', affectedElements: {}, playInReverse: false, autoStopEventId: 'e-17' } },
+      action: {
+        id: '',
+        actionTypeId: 'GENERAL_START_ACTION',
+        config: { delay: 0, easing: '', duration: 0, actionListId: 'a-4', affectedElements: {}, playInReverse: false, autoStopEventId: 'e-17' }
+      },
       mediaQueries: ['main', 'medium', 'small', 'tiny'],
       target: { id: '5fc25a3797a8f4c9b2226ec5', appliesTo: 'PAGE', styleBlockIds: [] },
       targets: [{ id: '5fc25a3797a8f4c9b2226ec5', appliesTo: 'PAGE', styleBlockIds: [] }],
@@ -21906,7 +22053,18 @@ Webflow.require('ix2').init({
       mediaQueries: ['main'],
       target: { id: '5fc6bf345b2d335bc98ff050', appliesTo: 'PAGE', styleBlockIds: [] },
       targets: [{ id: '5fc6bf345b2d335bc98ff050', appliesTo: 'PAGE', styleBlockIds: [] }],
-      config: [{ continuousParameterGroupId: 'a-p', smoothing: 50, startsEntering: true, addStartOffset: false, addOffsetValue: 50, startsExiting: false, addEndOffset: false, endOffsetValue: 50 }],
+      config: [
+        {
+          continuousParameterGroupId: 'a-p',
+          smoothing: 50,
+          startsEntering: true,
+          addStartOffset: false,
+          addOffsetValue: 50,
+          startsExiting: false,
+          addEndOffset: false,
+          endOffsetValue: 50
+        }
+      ],
       createdOn: 1606860596576
     },
     'e-63': {
@@ -21918,7 +22076,18 @@ Webflow.require('ix2').init({
       mediaQueries: ['main'],
       target: { id: '5fc6c03ed610e5ea2459edb3', appliesTo: 'PAGE', styleBlockIds: [] },
       targets: [{ id: '5fc6c03ed610e5ea2459edb3', appliesTo: 'PAGE', styleBlockIds: [] }],
-      config: [{ continuousParameterGroupId: 'a-p', smoothing: 50, startsEntering: true, addStartOffset: false, addOffsetValue: 50, startsExiting: false, addEndOffset: false, endOffsetValue: 50 }],
+      config: [
+        {
+          continuousParameterGroupId: 'a-p',
+          smoothing: 50,
+          startsEntering: true,
+          addStartOffset: false,
+          addOffsetValue: 50,
+          startsExiting: false,
+          addEndOffset: false,
+          endOffsetValue: 50
+        }
+      ],
       createdOn: 1606860862087
     },
     'e-80': {
@@ -21942,7 +22111,18 @@ Webflow.require('ix2').init({
       mediaQueries: ['main'],
       target: { id: '60dc5a04c3869a3d42134a2f', appliesTo: 'PAGE', styleBlockIds: [] },
       targets: [{ id: '60dc5a04c3869a3d42134a2f', appliesTo: 'PAGE', styleBlockIds: [] }],
-      config: [{ continuousParameterGroupId: 'a-p', smoothing: 50, startsEntering: true, addStartOffset: false, addOffsetValue: 50, startsExiting: false, addEndOffset: false, endOffsetValue: 50 }],
+      config: [
+        {
+          continuousParameterGroupId: 'a-p',
+          smoothing: 50,
+          startsEntering: true,
+          addStartOffset: false,
+          addOffsetValue: 50,
+          startsExiting: false,
+          addEndOffset: false,
+          endOffsetValue: 50
+        }
+      ],
       createdOn: 1625053700446
     },
     'e-181': {
@@ -21954,7 +22134,18 @@ Webflow.require('ix2').init({
       mediaQueries: ['main'],
       target: { id: '610ae74d5e52eb29faa2a0a4', appliesTo: 'PAGE', styleBlockIds: [] },
       targets: [{ id: '610ae74d5e52eb29faa2a0a4', appliesTo: 'PAGE', styleBlockIds: [] }],
-      config: [{ continuousParameterGroupId: 'a-p', smoothing: 50, startsEntering: true, addStartOffset: false, addOffsetValue: 50, startsExiting: false, addEndOffset: false, endOffsetValue: 50 }],
+      config: [
+        {
+          continuousParameterGroupId: 'a-p',
+          smoothing: 50,
+          startsEntering: true,
+          addStartOffset: false,
+          addOffsetValue: 50,
+          startsExiting: false,
+          addEndOffset: false,
+          endOffsetValue: 50
+        }
+      ],
       createdOn: 1628104526491
     },
     'e-184': {
@@ -22106,7 +22297,14 @@ Webflow.require('ix2').init({
                 {
                   id: 'a-n-3',
                   actionTypeId: 'STYLE_OPACITY',
-                  config: { delay: 0, easing: 'inOutQuad', duration: 500, target: { selector: '.navbar-background', selectorGuids: ['6a1faffd-6104-4185-d7ad-6092394e0eb6'] }, value: 0, unit: '' }
+                  config: {
+                    delay: 0,
+                    easing: 'inOutQuad',
+                    duration: 500,
+                    target: { selector: '.navbar-background', selectorGuids: ['6a1faffd-6104-4185-d7ad-6092394e0eb6'] },
+                    value: 0,
+                    unit: ''
+                  }
                 }
               ]
             },
@@ -22116,7 +22314,14 @@ Webflow.require('ix2').init({
                 {
                   id: 'a-n-4',
                   actionTypeId: 'STYLE_OPACITY',
-                  config: { delay: 0, easing: 'inOutQuad', duration: 500, target: { selector: '.navbar-background', selectorGuids: ['6a1faffd-6104-4185-d7ad-6092394e0eb6'] }, value: 1, unit: '' }
+                  config: {
+                    delay: 0,
+                    easing: 'inOutQuad',
+                    duration: 500,
+                    target: { selector: '.navbar-background', selectorGuids: ['6a1faffd-6104-4185-d7ad-6092394e0eb6'] },
+                    value: 1,
+                    unit: ''
+                  }
                 }
               ]
             }
@@ -22134,7 +22339,13 @@ Webflow.require('ix2').init({
             {
               id: 'a-2-n',
               actionTypeId: 'GENERAL_DISPLAY',
-              config: { delay: 0, easing: '', duration: 0, target: { useEventTarget: 'CHILDREN', selector: '.faqs-content', selectorGuids: ['94ecac62-3332-d14a-e3cc-706842fdc49e'] }, value: 'none' }
+              config: {
+                delay: 0,
+                easing: '',
+                duration: 0,
+                target: { useEventTarget: 'CHILDREN', selector: '.faqs-content', selectorGuids: ['94ecac62-3332-d14a-e3cc-706842fdc49e'] },
+                value: 'none'
+              }
             },
             {
               id: 'a-2-n-3',
@@ -22169,7 +22380,13 @@ Webflow.require('ix2').init({
             {
               id: 'a-2-n-4',
               actionTypeId: 'GENERAL_DISPLAY',
-              config: { delay: 0, easing: '', duration: 0, target: { useEventTarget: 'CHILDREN', selector: '.faqs-content', selectorGuids: ['94ecac62-3332-d14a-e3cc-706842fdc49e'] }, value: 'block' }
+              config: {
+                delay: 0,
+                easing: '',
+                duration: 0,
+                target: { useEventTarget: 'CHILDREN', selector: '.faqs-content', selectorGuids: ['94ecac62-3332-d14a-e3cc-706842fdc49e'] },
+                value: 'block'
+              }
             }
           ]
         },
@@ -22289,7 +22506,13 @@ Webflow.require('ix2').init({
             {
               id: 'a-3-n-4',
               actionTypeId: 'GENERAL_DISPLAY',
-              config: { delay: 0, easing: '', duration: 0, target: { useEventTarget: 'CHILDREN', selector: '.faqs-content', selectorGuids: ['94ecac62-3332-d14a-e3cc-706842fdc49e'] }, value: 'none' }
+              config: {
+                delay: 0,
+                easing: '',
+                duration: 0,
+                target: { useEventTarget: 'CHILDREN', selector: '.faqs-content', selectorGuids: ['94ecac62-3332-d14a-e3cc-706842fdc49e'] },
+                value: 'none'
+              }
             }
           ]
         }
@@ -22320,12 +22543,26 @@ Webflow.require('ix2').init({
             {
               id: 'a-4-n-19',
               actionTypeId: 'STYLE_OPACITY',
-              config: { delay: 0, easing: '', duration: 500, target: { selector: '.scroll-down', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777043'] }, value: 0, unit: '' }
+              config: {
+                delay: 0,
+                easing: '',
+                duration: 500,
+                target: { selector: '.scroll-down', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777043'] },
+                value: 0,
+                unit: ''
+              }
             },
             {
               id: 'a-4-n-16',
               actionTypeId: 'STYLE_OPACITY',
-              config: { delay: 0, easing: '', duration: 500, target: { selector: '.hero-image', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777042'] }, value: 0, unit: '' }
+              config: {
+                delay: 0,
+                easing: '',
+                duration: 500,
+                target: { selector: '.hero-image', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777042'] },
+                value: 0,
+                unit: ''
+              }
             },
             {
               id: 'a-4-n-15',
@@ -22344,17 +22581,38 @@ Webflow.require('ix2').init({
             {
               id: 'a-4-n-9',
               actionTypeId: 'STYLE_OPACITY',
-              config: { delay: 0, easing: '', duration: 500, target: { selector: '.form-one', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777038'] }, value: 0, unit: '' }
+              config: {
+                delay: 0,
+                easing: '',
+                duration: 500,
+                target: { selector: '.form-one', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777038'] },
+                value: 0,
+                unit: ''
+              }
             },
             {
               id: 'a-4-n-8',
               actionTypeId: 'STYLE_OPACITY',
-              config: { delay: 0, easing: '', duration: 500, target: { selector: '.hero-title', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d77703d'] }, value: 0, unit: '' }
+              config: {
+                delay: 0,
+                easing: '',
+                duration: 500,
+                target: { selector: '.hero-title', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d77703d'] },
+                value: 0,
+                unit: ''
+              }
             },
             {
               id: 'a-4-n-7',
               actionTypeId: 'STYLE_OPACITY',
-              config: { delay: 0, easing: '', duration: 500, target: { selector: '.hero-text', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777046'] }, value: 0, unit: '' }
+              config: {
+                delay: 0,
+                easing: '',
+                duration: 500,
+                target: { selector: '.hero-text', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777046'] },
+                value: 0,
+                unit: ''
+              }
             },
             {
               id: 'a-4-n-6',
@@ -22423,7 +22681,14 @@ Webflow.require('ix2').init({
             {
               id: 'a-4-n-18',
               actionTypeId: 'STYLE_OPACITY',
-              config: { delay: 0, easing: 'inQuad', duration: 300, target: { selector: '.hero-image', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777042'] }, value: 1, unit: '' }
+              config: {
+                delay: 0,
+                easing: 'inQuad',
+                duration: 300,
+                target: { selector: '.hero-image', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777042'] },
+                value: 1,
+                unit: ''
+              }
             }
           ]
         },
@@ -22446,7 +22711,14 @@ Webflow.require('ix2').init({
             {
               id: 'a-4-n-11',
               actionTypeId: 'STYLE_OPACITY',
-              config: { delay: 0, easing: 'inQuad', duration: 300, target: { selector: '.hero-title', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d77703d'] }, value: 1, unit: '' }
+              config: {
+                delay: 0,
+                easing: 'inQuad',
+                duration: 300,
+                target: { selector: '.hero-title', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d77703d'] },
+                value: 1,
+                unit: ''
+              }
             }
           ]
         },
@@ -22455,7 +22727,14 @@ Webflow.require('ix2').init({
             {
               id: 'a-4-n-12',
               actionTypeId: 'STYLE_OPACITY',
-              config: { delay: 0, easing: 'inQuad', duration: 300, target: { selector: '.hero-text', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777046'] }, value: 1, unit: '' }
+              config: {
+                delay: 0,
+                easing: 'inQuad',
+                duration: 300,
+                target: { selector: '.hero-text', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777046'] },
+                value: 1,
+                unit: ''
+              }
             },
             {
               id: 'a-4-n-13',
@@ -22478,7 +22757,14 @@ Webflow.require('ix2').init({
             {
               id: 'a-4-n-14',
               actionTypeId: 'STYLE_OPACITY',
-              config: { delay: 0, easing: 'inQuad', duration: 300, target: { selector: '.form-one', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777038'] }, value: 1, unit: '' }
+              config: {
+                delay: 0,
+                easing: 'inQuad',
+                duration: 300,
+                target: { selector: '.form-one', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777038'] },
+                value: 1,
+                unit: ''
+              }
             }
           ]
         },
@@ -22487,7 +22773,14 @@ Webflow.require('ix2').init({
             {
               id: 'a-4-n-20',
               actionTypeId: 'STYLE_OPACITY',
-              config: { delay: 0, easing: 'inQuad', duration: 300, target: { selector: '.scroll-down', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777043'] }, value: 1, unit: '' }
+              config: {
+                delay: 0,
+                easing: 'inQuad',
+                duration: 300,
+                target: { selector: '.scroll-down', selectorGuids: ['ed883a20-0a5b-c5db-1b6b-bc919d777043'] },
+                value: 1,
+                unit: ''
+              }
             }
           ]
         }
@@ -22499,12 +22792,28 @@ Webflow.require('ix2').init({
       id: 'slideInBottom',
       useFirstGroupAsInitialState: true,
       actionItemGroups: [
-        { actionItems: [{ actionTypeId: 'STYLE_OPACITY', config: { delay: 0, duration: 0, target: { id: 'N/A', appliesTo: 'TRIGGER_ELEMENT', useEventTarget: true }, value: 0 } }] },
+        {
+          actionItems: [
+            {
+              actionTypeId: 'STYLE_OPACITY',
+              config: { delay: 0, duration: 0, target: { id: 'N/A', appliesTo: 'TRIGGER_ELEMENT', useEventTarget: true }, value: 0 }
+            }
+          ]
+        },
         {
           actionItems: [
             {
               actionTypeId: 'TRANSFORM_MOVE',
-              config: { delay: 0, duration: 0, target: { id: 'N/A', appliesTo: 'TRIGGER_ELEMENT', useEventTarget: true }, xValue: 0, yValue: 100, xUnit: 'PX', yUnit: 'PX', zUnit: 'PX' }
+              config: {
+                delay: 0,
+                duration: 0,
+                target: { id: 'N/A', appliesTo: 'TRIGGER_ELEMENT', useEventTarget: true },
+                xValue: 0,
+                yValue: 100,
+                xUnit: 'PX',
+                yUnit: 'PX',
+                zUnit: 'PX'
+              }
             }
           ]
         },
@@ -22524,7 +22833,10 @@ Webflow.require('ix2').init({
                 zUnit: 'PX'
               }
             },
-            { actionTypeId: 'STYLE_OPACITY', config: { delay: 0, easing: 'outQuart', duration: 1000, target: { id: 'N/A', appliesTo: 'TRIGGER_ELEMENT', useEventTarget: true }, value: 1 } }
+            {
+              actionTypeId: 'STYLE_OPACITY',
+              config: { delay: 0, easing: 'outQuart', duration: 1000, target: { id: 'N/A', appliesTo: 'TRIGGER_ELEMENT', useEventTarget: true }, value: 1 }
+            }
           ]
         }
       ]
