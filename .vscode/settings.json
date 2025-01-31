@@ -1,4 +1,7 @@
 {
   "prettier.configPath": ".prettierrc.yml",
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "files.associations": {
+    "*.html": "liquid"
+  }
 }
