@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "rdbg",
+      "name": "Debug Jekyll",
+      "request": "launch",
+      "script": "bin/jekyll build --config _config.yml --profile",
+      "args": [],
+      "askParameters": false
+    }
+  ]
+}

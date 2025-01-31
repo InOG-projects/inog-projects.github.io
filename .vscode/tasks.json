@@ -1,0 +1,15 @@
+{
+  // VSCode tasks.json file to run Jekyll serve command as a build task
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Jekyll",
+      "type": "shell",
+      "command": "bundle exec jekyll serve --host localhost --port 4000 --open-url",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
