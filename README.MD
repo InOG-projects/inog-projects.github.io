@@ -17,3 +17,11 @@ bundle exec htmlproofer --assume_extension '.html' ./_site
 ```
 bundle exec rubocop
 ```
+
+## Prettier
+
+Run it on the entire project
+
+```
+prettier --write .
+```
