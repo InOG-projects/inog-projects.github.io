@@ -4,5 +4,6 @@ _site
 .jekyll-metadata
 vendor
 
-# We want to track the .vscode folder
+# We want to track these
 !.vscode
+!bin/
