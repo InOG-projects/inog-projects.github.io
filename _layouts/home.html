@@ -1,0 +1,24 @@
+---
+layout: home
+---
+
+<!doctype html>
+<html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+    {% include header.html %}
+
+
+            <!--- content start -->
+          {{ content }}
+            <!--- content end -->
+
+
+    <footer>
+      {% include footer.html %}
+    </footer>
+  </body>
+</html>

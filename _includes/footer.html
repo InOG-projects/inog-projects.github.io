@@ -1,0 +1,50 @@
+<div class="footer wf-section">
+  <div class="footer-block">
+    <div class="footer-divider"></div>
+    <div class="w-layout-grid footer-grid">
+      <div id="w-node-_23a2213f-f1e5-367e-fc87-519567ce2116-67ce2112" class="left-block-footer">
+        <a href="/" class="footer-brand w-inline-block">
+          <img src="/assets/images/InÖG_Logo_1.1-Lang-Regular_RGB.svg" width="233" alt="" class="logo" />
+        </a>
+        <p class="footer-paragraph">
+          Wir verbinden Innovationen
+          <br />
+          und den ÖGD miteinander
+        </p>
+      </div>
+      <div id="w-node-_23a2213f-f1e5-367e-fc87-519567ce212f-67ce2112" class="block-footer">
+        <h5 class="footer-title">Kontakt</h5>
+        <a href="mailto:info@inög.de" class="footer-link">info@inoeg.de</a>
+        <a href="/impressum.html" class="footer-link">Impressum</a>
+        <a href="/datenschutz.html" class="footer-link">Datenschutz</a>
+      </div>
+      <div id="w-node-_23a2213f-f1e5-367e-fc87-519567ce2126-67ce2112" class="block-footer">
+        <h5 class="footer-title">Partner</h5>
+        <a href="https://www.steiger-stiftung.de" target="_blank" class="footer-link">Björn Steiger Stiftung</a>
+      </div>
+      <div id="w-node-_8e5575b2-8b73-e7f3-4abc-bef8a098aa3b-67ce2112" class="block-footer">
+        <h5 class="footer-title">Unterstützen</h5>
+        <a href="https://github.com/InOG-projects" target="_blank" class="footer-link">GitHub</a>
+        <a href="https://www.patreon.com/inoeg" target="_blank" class="footer-link">Patreon</a>
+        <div id="w-node-_16b82c70-fa76-ae7b-411e-78341052b7c4-67ce2112" class="twitter w-widget w-widget-twitter">
+          <iframe
+            title="Twitter Follow Button"
+            allowtransparency="true"
+            scrolling="no"
+            src="https://platform.twitter.com/widgets/follow_button.html#dnt=true&amp;height=20&amp;screen_name=inoeg_de&amp;show_count=false&amp;size=m&amp;width=100%25"
+            style="border: medium none; height: 20px; overflow: hidden; width: 100%"
+            frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+    {% if site.footer.links %} {% for link in site.footer.links %} {% if link.label and link.url %}
+    <li>
+      <a href="{{ link.url }}" rel="nofollow noopener noreferrer">
+        <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+        {{ link.label }}
+      </a>
+    </li>
+    {% endif %} {% endfor %} {% endif %}
+    <div class="footer-divider"></div>
+  </div>
+</div>

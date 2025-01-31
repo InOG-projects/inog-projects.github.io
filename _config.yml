@@ -18,6 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+locale: "de-DE"
 title: Your awesome title
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -25,14 +26,22 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.inoeg.de" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username: jekyll
 
-# Build settings
-theme: minima
+# Specify used plugins here and in the Gemfile to ensure full flexibility.
+# Note that github pages only supports plugins that are specified in _config.yml
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+# List the same plugins again to  mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -46,6 +55,36 @@ exclude:
   - .vscode/
   - .github/
   - .jekyll-cache/
+  - .ruby-lsp/
   - gemfiles/
   - Gemfile
   - Gemfile.lock
+  - bin/
+
+# But make sure to process the following directories and their entries.
+include:
+  - _pages # static content
+  - _posts # for blog / news posts
+  - documents
+
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      # url:
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url:

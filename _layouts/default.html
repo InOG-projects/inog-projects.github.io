@@ -1,0 +1,34 @@
+---
+# Default Template / Empty Frontmatter
+---
+<!doctype html>
+<html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+    {% include header.html %}
+
+    <div class="header-section wf-section">
+      <div class="single-hero-block lower">
+        <h1 class="single-page-title">{{ page.title | default: site.title }}</h1>
+      </div>
+    </div>
+    <div class="section wf-section">
+      <div class="block-content">
+        <div class="w-layout-grid grid-insurance-boxes">
+          <div id="w-node-_5dd35c4b-728f-bb4f-dc73-bc89aff15e18-42134a2f" class="health-insurance-box">
+            <!--- content start -->
+          {{ content }}
+            <!--- content end -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      {% include footer.html %}
+    </footer>
+  </body>
+</html>

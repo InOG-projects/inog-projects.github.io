@@ -1,15 +1,24 @@
 # Prettier (formatter) configuration
-
 ---
 # semi set to true means that Prettier will add semicolons when necessary.
 semi: true
 # trailingComma set to none means that Prettier will remove
 # any trailing commas at the end of objects.
 trailingComma: none
-# printWidth set to 80 specifies that the printer
+# printWidth set to 200 specifies that the printer
 # will wrap any lines that exceed 80 characters.
-printWidth: 80
+printWidth: 160
+bracketSameLine: true
+bracketSpacing: true
+tabWidth: 2
+useTabs: false
+arrowParens: avoid
+htmlWhitespaceSensitivity: "ignore"
 overrides:
+  - files: "*.html"
+    options:
+      semi: true
+      bracketSameLine: true
   - files: "*.js"
     options:
       singleQuote: true
