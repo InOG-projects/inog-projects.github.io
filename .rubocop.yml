@@ -1,0 +1,11 @@
+require: rubocop-jekyll
+inherit_gem:
+  rubocop-jekyll: .rubocop.yml
+AllCops:
+  NewCops: enable
+Style/DataInheritance: # new in 1.49
+  Enabled: true
+Style/YAMLFileRead: # new in 1.53
+  Enabled: true
+Performance/StringBytesize: # new in 1.23
+  Enabled: true
