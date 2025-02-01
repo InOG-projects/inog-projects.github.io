@@ -224,10 +224,23 @@ blockquote {
   align-items: center;
   border-radius: 6px;
   background-color: #f0f3ff;
-  -webkit-transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, background-color 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  -webkit-transition:
+    background-color 200ms ease-in-out,
+    box-shadow 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    box-shadow 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
+  transition:
+    transform 200ms ease-in-out,
+    background-color 200ms ease-in-out,
+    box-shadow 200ms ease-in-out;
+  transition:
+    transform 200ms ease-in-out,
+    background-color 200ms ease-in-out,
+    box-shadow 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
   color: #2845ba;
   font-weight: 500;
   text-decoration: none;
@@ -235,7 +248,9 @@ blockquote {
 
 .phone-button:hover {
   background-color: #fff;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.08), 0 4px 6px 0 rgba(0, 0, 0, 0.11);
+  box-shadow:
+    0 1px 4px 0 rgba(0, 0, 0, 0.08),
+    0 4px 6px 0 rgba(0, 0, 0, 0.11);
   -webkit-transform: translate(0px, -3px);
   -ms-transform: translate(0px, -3px);
   transform: translate(0px, -3px);
@@ -249,7 +264,9 @@ blockquote {
   -webkit-transition: -webkit-transform 200ms ease;
   transition: -webkit-transform 200ms ease;
   transition: transform 200ms ease;
-  transition: transform 200ms ease, -webkit-transform 200ms ease;
+  transition:
+    transform 200ms ease,
+    -webkit-transform 200ms ease;
 }
 
 .logo:hover {
@@ -263,7 +280,9 @@ blockquote {
   -webkit-transition: -webkit-transform 200ms ease;
   transition: -webkit-transform 200ms ease;
   transition: transform 200ms ease;
-  transition: transform 200ms ease, -webkit-transform 200ms ease;
+  transition:
+    transform 200ms ease,
+    -webkit-transform 200ms ease;
 }
 
 .brand:hover {
@@ -573,10 +592,19 @@ blockquote {
   border-radius: 6px;
   background-color: #2845ba;
   box-shadow: 0 11px 36px 0 rgba(40, 69, 186, 0.2);
-  -webkit-transition: background-color 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out, transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  -webkit-transition:
+    background-color 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    transform 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    transform 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
   font-weight: 500;
 }
 
@@ -786,7 +814,9 @@ blockquote {
   -webkit-transition: -webkit-transform 200ms ease-in-out;
   transition: -webkit-transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  transition:
+    transform 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
 }
 
 .customer:hover {
@@ -809,8 +839,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: #f2feff;
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .health-insurance-block:hover {
@@ -833,8 +867,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(214, 205, 208, 0.61);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .pet-insurance-block:hover {
@@ -887,8 +925,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(129, 198, 255, 0.61);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .car-insurance-block:hover {
@@ -1041,10 +1083,19 @@ blockquote {
   border-color: #2845ba;
   border-radius: 6px;
   background-color: transparent;
-  -webkit-transition: background-color 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out, transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  -webkit-transition:
+    background-color 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    transform 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    transform 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
   color: #2845ba;
   font-weight: 500;
   text-align: center;
@@ -1052,7 +1103,9 @@ blockquote {
 
 .secondary-button:hover {
   background-color: #2845ba;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.08), 0 4px 6px 0 rgba(0, 0, 0, 0.11);
+  box-shadow:
+    1px 1px 4px 0 rgba(0, 0, 0, 0.08),
+    0 4px 6px 0 rgba(0, 0, 0, 0.11);
   -webkit-transform: translate(0px, -3px);
   -ms-transform: translate(0px, -3px);
   transform: translate(0px, -3px);
@@ -1091,7 +1144,9 @@ blockquote {
   -webkit-transition: -webkit-transform 500ms ease-in-out;
   transition: -webkit-transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition:
+    transform 500ms ease-in-out,
+    -webkit-transform 500ms ease-in-out;
 }
 
 .step-image:hover {
@@ -1572,7 +1627,9 @@ blockquote {
   -webkit-transition: -webkit-transform 500ms ease-in-out;
   transition: -webkit-transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  transition:
+    transform 500ms ease-in-out,
+    -webkit-transform 500ms ease-in-out;
 }
 
 .blog-image:hover {
@@ -1593,8 +1650,12 @@ blockquote {
   border-color: #d8d8d8;
   border-radius: 6px;
   background-color: #fff;
-  -webkit-transition: color 300ms ease-in-out, box-shadow 300ms ease-in-out;
-  transition: color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+  -webkit-transition:
+    color 300ms ease-in-out,
+    box-shadow 300ms ease-in-out;
+  transition:
+    color 300ms ease-in-out,
+    box-shadow 300ms ease-in-out;
 }
 
 .blog-title-date:hover {
@@ -1760,8 +1821,12 @@ blockquote {
   margin-left: 10px;
   border-radius: 100px;
   background-color: #f0f3ff;
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
   color: #2845ba;
 }
 
@@ -1852,8 +1917,12 @@ blockquote {
   margin-left: auto;
   border-radius: 100px;
   background-color: #f0f3ff;
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
   color: #2845ba;
 }
 
@@ -2113,7 +2182,9 @@ blockquote {
   border-radius: 6px;
   background-color: #f0f3ff;
   background-image: url("../assets/images/CTA-Shape-1.png"), url("../assets/images/CTA-Shape-2.png");
-  background-position: 0px 0px, 100% 100%;
+  background-position:
+    0px 0px,
+    100% 100%;
   background-size: auto, 25%;
   background-repeat: no-repeat, no-repeat;
 }
@@ -2229,7 +2300,9 @@ blockquote {
   -webkit-transition: -webkit-transform 200ms ease;
   transition: -webkit-transform 200ms ease;
   transition: transform 200ms ease;
-  transition: transform 200ms ease, -webkit-transform 200ms ease;
+  transition:
+    transform 200ms ease,
+    -webkit-transform 200ms ease;
 }
 
 .cover-logo:hover {
@@ -2630,10 +2703,19 @@ blockquote {
   border-radius: 6px;
   background-color: #2845ba;
   box-shadow: 0 11px 36px 0 rgba(40, 69, 186, 0.2);
-  -webkit-transition: background-color 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out, transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  -webkit-transition:
+    background-color 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    transform 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    transform 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
 }
 
 .contact-us-button:hover {
@@ -2748,10 +2830,19 @@ blockquote {
   border-color: #2845ba;
   border-radius: 6px;
   background-color: transparent;
-  -webkit-transition: background-color 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out, transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  -webkit-transition:
+    background-color 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    transform 200ms ease-in-out;
+  transition:
+    background-color 200ms ease-in-out,
+    transform 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
   color: #2845ba;
   font-weight: 500;
   text-align: center;
@@ -2759,7 +2850,9 @@ blockquote {
 
 .secundary-button:hover {
   background-color: #2845ba;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.08), 0 4px 6px 0 rgba(0, 0, 0, 0.11);
+  box-shadow:
+    1px 1px 4px 0 rgba(0, 0, 0, 0.08),
+    0 4px 6px 0 rgba(0, 0, 0, 0.11);
   -webkit-transform: translate(0px, -3px);
   -ms-transform: translate(0px, -3px);
   transform: translate(0px, -3px);
@@ -2826,7 +2919,9 @@ blockquote {
   -webkit-transition: -webkit-transform 200ms ease-in-out;
   transition: -webkit-transform 200ms ease-in-out;
   transition: transform 200ms ease-in-out;
-  transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  transition:
+    transform 200ms ease-in-out,
+    -webkit-transform 200ms ease-in-out;
   color: #fff;
   font-weight: 500;
   text-align: center;
@@ -3010,8 +3105,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: #fff6f2;
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .quarano:hover {
@@ -3029,8 +3128,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(219, 0, 4, 0.09);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .imis-block:hover {
@@ -3104,8 +3207,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: #f2f5ff;
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .healthident:hover {
@@ -3123,8 +3230,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(40, 0, 219, 0.09);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .darfichdas:hover {
@@ -3142,8 +3253,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(193, 6, 9, 0.09);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .protano:hover {
@@ -3161,8 +3276,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(193, 6, 9, 0.09);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .reisecheck:hover {
@@ -3184,8 +3303,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(184, 3, 255, 0.3);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .recover:hover {
@@ -3203,8 +3326,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(205, 210, 214, 0.61);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .luca:hover {
@@ -3221,8 +3348,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(137, 200, 252, 0.61);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .darfichrein:hover {
@@ -3239,8 +3370,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(176, 122, 247, 0.61);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .einfachbesuchen:hover {
@@ -3258,8 +3393,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(48, 185, 209, 0.61);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .imnu:hover {
@@ -3276,8 +3415,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(48, 209, 190, 0.61);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .meetbook:hover {
@@ -3435,8 +3578,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(137, 200, 252, 0.61);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .imero_new:hover {
@@ -3454,8 +3601,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: #fff6f2;
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .ntt-data:hover {
@@ -3473,8 +3624,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(184, 3, 255, 0.3);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .impfee:hover {
@@ -3492,8 +3647,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: #f2feff;
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .schnelltestapo:hover {
@@ -3511,8 +3670,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(48, 185, 209, 0.61);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .reopen:hover {
@@ -3530,8 +3693,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: #f2f5ff;
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .eguest:hover {
@@ -3548,8 +3715,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(129, 198, 255, 0.61);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .car-insurance-block-copy:hover {
@@ -3566,8 +3737,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(129, 198, 255, 0.61);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .car-insurance-block-copy-copy:hover {
@@ -3585,8 +3760,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(205, 210, 214, 0.61);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .lola:hover {
@@ -3614,8 +3793,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(48, 185, 209, 0.61);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .cosynus:hover {
@@ -3649,8 +3832,12 @@ blockquote {
   border: 1px solid transparent;
   border-radius: 6px;
   background-color: rgba(205, 210, 214, 0.61);
-  -webkit-transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
-  transition: box-shadow 200ms ease-in-out, background-color 200ms ease-in-out;
+  -webkit-transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  transition:
+    box-shadow 200ms ease-in-out,
+    background-color 200ms ease-in-out;
 }
 
 .iris:hover {
@@ -3754,10 +3941,23 @@ blockquote {
     align-items: stretch;
     border-radius: 6px;
     background-color: #f0f3ff;
-    -webkit-transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-    transition: transform 200ms ease-in-out, background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
-    transition: transform 200ms ease-in-out, background-color 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+    -webkit-transition:
+      background-color 200ms ease-in-out,
+      box-shadow 200ms ease-in-out,
+      -webkit-transform 200ms ease-in-out;
+    transition:
+      background-color 200ms ease-in-out,
+      box-shadow 200ms ease-in-out,
+      -webkit-transform 200ms ease-in-out;
+    transition:
+      transform 200ms ease-in-out,
+      background-color 200ms ease-in-out,
+      box-shadow 200ms ease-in-out;
+    transition:
+      transform 200ms ease-in-out,
+      background-color 200ms ease-in-out,
+      box-shadow 200ms ease-in-out,
+      -webkit-transform 200ms ease-in-out;
     color: #2845ba;
     font-weight: 600;
   }
@@ -3779,16 +3979,31 @@ blockquote {
     padding: 11px 12px;
     border-radius: 6px;
     background-color: #f0f3ff;
-    -webkit-transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out, transform 200ms ease-in-out, box-shadow 200ms ease-in-out;
-    transition: background-color 200ms ease-in-out, transform 200ms ease-in-out, box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+    -webkit-transition:
+      background-color 200ms ease-in-out,
+      box-shadow 200ms ease-in-out,
+      -webkit-transform 200ms ease-in-out;
+    transition:
+      background-color 200ms ease-in-out,
+      box-shadow 200ms ease-in-out,
+      -webkit-transform 200ms ease-in-out;
+    transition:
+      background-color 200ms ease-in-out,
+      transform 200ms ease-in-out,
+      box-shadow 200ms ease-in-out;
+    transition:
+      background-color 200ms ease-in-out,
+      transform 200ms ease-in-out,
+      box-shadow 200ms ease-in-out,
+      -webkit-transform 200ms ease-in-out;
     color: #2845ba;
   }
 
   .menu-button:hover {
     background-color: #fff;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.11), 0 1px 4px 0 rgba(0, 0, 0, 0.08);
+    box-shadow:
+      0 4px 6px 0 rgba(0, 0, 0, 0.11),
+      0 1px 4px 0 rgba(0, 0, 0, 0.08);
     -webkit-transform: translate(0px, -3px);
     -ms-transform: translate(0px, -3px);
     transform: translate(0px, -3px);
@@ -5194,7 +5409,9 @@ blockquote {
     -webkit-transition-property: -webkit-filter;
     transition-property: -webkit-filter;
     transition-property: filter;
-    transition-property: filter, -webkit-filter;
+    transition-property:
+      filter,
+      -webkit-filter;
   }
 
   .collection-list-blog {

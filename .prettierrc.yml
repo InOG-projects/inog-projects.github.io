@@ -48,3 +48,19 @@ overrides:
       bracketSameLine: true
       xmlQuoteAttributes: double
       xmlSortAttributesByKey: true
+  - files: "*.css"
+    options:
+      trailingComma: "none"
+      arrowParens: "avoid"
+      jsxSingleQuote: false
+      semi: true
+      jsxBracketSameLine: true
+  # Pretty default, but just in case
+  - files: "*.json"
+    options:
+      parser: json
+  - files:
+      - "*.yml"
+      - "*.yaml"
+    options:
+      parser: yaml
