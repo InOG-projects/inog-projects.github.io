@@ -2,5 +2,14 @@
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^1.7.2",
     "prettier": "^3.4.2"
-  }
+  },
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "dev": "bundle exec jekyll serve --host localhost --port 4000 --open-url",
+    "format": "prettier --write .",
+    "rubocop": "bundle exec rubocop",
+    "test-links": "bundle exec htmlproofer --assume_extension '.html' ./_site --ignore-urls \"/^http://127.0.0.1/,/^http://0.0.0.0/,/^http://localhost/\" --disable-external"
+  },
+  "author": "Jan Sroka <jan.sroka@inoeg.de>",
+  "license": "UNLICENSED"
 }
