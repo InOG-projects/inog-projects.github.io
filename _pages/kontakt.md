@@ -6,6 +6,16 @@ redirect_from:
   - /contact/
   - /contact-us.html
 ---
+Sie erreichen uns am Einfachsten per Email unter {{ site.email }}.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nunc nec vulputate ultricies, nunc nunc ultricies nunc, nec nunc nunc nunc nunc nunc
-nunc
+Bzgl. spezifischer Anfragen können Sie uns auch gerne wie folgt kontaktieren:
+
+- **Allgemeine Anfragen**: {{ site.email }}
+
+- **Presseanfragen**: presse@inoeg.de
+
+- **Anfragen bzgl. ePA**: epa@inoeg.de
+
+- **Anfragen bzgl. b3 / Buntes Bug Bounty**: b3@inoeg.de
+
+- **Anfragen bzgl. Datenschutz, IT & Sicherheit**: security@inoeg.de
