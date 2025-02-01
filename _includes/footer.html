@@ -4,11 +4,11 @@
     <div class="w-layout-grid footer-grid">
       <div id="w-node-_23a2213f-f1e5-367e-fc87-519567ce2116-67ce2112" class="left-block-footer">
         <a href="/" class="footer-brand w-inline-block">
-          <img src="/assets/images/InÖG_Logo_1.1-Lang-Regular_RGB.svg" width="233" alt="" class="logo" />
+          <img src="/assets/images/InÖG_Logo_1.1-Lang-Regular_RGB.svg" width="233" alt="" class="logo">
         </a>
         <p class="footer-paragraph">
           Wir verbinden Innovationen
-          <br />
+          <br>
           und den ÖGD miteinander
         </p>
       </div>
@@ -37,14 +37,18 @@
         </div>
       </div>
     </div>
-    {% if site.footer.links %} {% for link in site.footer.links %} {% if link.label and link.url %}
-    <li>
-      <a href="{{ link.url }}" rel="nofollow noopener noreferrer">
-        <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
-        {{ link.label }}
-      </a>
-    </li>
-    {% endif %} {% endfor %} {% endif %}
+    {% if site.footer.links %}
+      {% for link in site.footer.links %}
+        {% if link.label and link.url %}
+          <li>
+            <a href="{{ link.url }}" rel="nofollow noopener noreferrer">
+              <i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>
+              {{ link.label }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
     <div class="footer-divider"></div>
   </div>
 </div>
