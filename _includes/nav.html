@@ -1,8 +1,9 @@
 <!-- nav start -->
 <nav role="navigation" class="nav-menu w-nav-menu">
   <a href="https://www.iris-connect.de/" target="_blank" class="nav-link w-nav-link">IRIS connect</a>
-  <a href="/projekte.html" class="nav-link w-nav-link">Projekte</a>
-  <a href="/veroeffentlichungen.html" aria-current="page" class="nav-link w-nav-link w--current">Veröffentlichungen</a>
-  <a href="/contact-us.html" class="nav-link w-nav-link">Kontakt</a>
+  {% assign current = page.url | downcase | split: '/' %}
+  <a href="/projekte/" class="nav-link w-nav-link {% if current[1] == 'projekte' %}w--current{% endif %}">Projekte</a>
+  <a href="/veroeffentlichungen/" aria-current="page" class="nav-link w-nav-link {% if current[1] == 'veroeffentlichungen' %}w--current{% endif %}">Veröffentlichungen</a>
+  <a href="/kontakt/"" class="nav-link w-nav-link {% if current[1] == 'kontakt' %}w--current{% endif %}">Kontakt</a>
 </nav>
 <!-- nav end -->
