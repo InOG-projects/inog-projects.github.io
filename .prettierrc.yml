@@ -54,7 +54,7 @@ overrides:
       arrowParens: "avoid"
       jsxSingleQuote: false
       semi: true
-      jsxBracketSameLine: true
+      bracketSameLine: true
   # Pretty default, but just in case
   - files: "*.json"
     options:
