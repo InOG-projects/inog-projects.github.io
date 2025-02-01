@@ -7048,7 +7048,7 @@ blockquote {
   grid-column-end: span 1;
 }
 
-#w-node-_65116fa1-d0b5-ff31-a9d5-59932a64ebdd-b2226ec5 {
+#w-node-supported_by {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
@@ -7248,7 +7248,7 @@ blockquote {
 }
 
 @media screen and (max-width: 767px) {
-  #w-node-_65116fa1-d0b5-ff31-a9d5-59932a64ebdd-b2226ec5 {
+  #w-node-supported_by {
     -ms-grid-row-align: center;
     align-self: center;
     -ms-grid-column-align: center;
