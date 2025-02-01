@@ -1,2 +1,3 @@
 # Prettier Ignore
 *.css
+node_modules/

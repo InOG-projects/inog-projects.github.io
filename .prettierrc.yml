@@ -15,7 +15,8 @@ useTabs: false
 arrowParens: avoid
 htmlWhitespaceSensitivity: "ignore"
 plugins:
-  - "@shopify/prettier-plugin-liquid"
+  - "@shopify/prettier-plugin-liquid" # parser: liquid-html
+  - "@prettier/plugin-xml" # parser: xml
 overrides:
   - files: "*.html"
     options:
@@ -26,7 +27,7 @@ overrides:
       singleQuote: true
   - files: "*.svg"
     options:
-      parser: html
+      parser: xml
   - files:
       - "_layouts/*.html"
       - "_includes/*.html"
@@ -42,3 +43,8 @@ overrides:
     options:
       parser: markdown
       proseWrap: always
+  - files: "*.xml"
+    options:
+      bracketSameLine: true
+      xmlQuoteAttributes: double
+      xmlSortAttributesByKey: true
