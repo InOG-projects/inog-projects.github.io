@@ -2,6 +2,11 @@
   "prettier.configPath": ".prettierrc.yml",
   "prettier.singleQuote": true,
   "files.associations": {
-    "*.html": "liquid"
+    "*.html": "liquid",
+    "*.md": "liquid"
+  },
+  "[liquid]": {
+    "editor.defaultFormatter": "Shopify.theme-check-vscode",
+    "editor.formatOnSave": true
   }
 }
