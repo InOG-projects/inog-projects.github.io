@@ -1,11 +1,12 @@
 ---
 layout: home
-title: InÖG Index
-excerpt: "Excprt"
+title: Willkommen beim InÖG
 sitemap: true
 permalink: /
 redirect_from:
   - /old-index.html
+# Used for meta description and open graph, if empty we use the site description
+description: This is my awesome writeup of this fantastic thing
 ---
 <div class="header-section wf-section">
   <div class="hero-block">
@@ -20,7 +21,7 @@ redirect_from:
             transform: translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
           "
           class="hero-title">
-          Wir verbinden Innovationen mit dem ÖGD
+          {{ site.description }}
         </h1>
         <p
           style="

@@ -1,13 +1,21 @@
 <meta charset="utf-8">
-<title>Offener Brief ePA 2025 – Fünf Schritte zu mehr Vertrauen in die ePA</title>
-<meta content="Fünf Schritte zu mehr Vertrauen in die ePA" name="description">
-<meta content="Fünf Schritte zu mehr Vertrauen in die ePA" property="og:title">
-<meta content="Fünf Schritte zu mehr Vertrauen in die ePA" property="og:description">
-<meta content="Fünf Schritte zu mehr Vertrauen in die ePA" property="twitter:title">
-<meta content="Fünf Schritte zu mehr Vertrauen in die ePA" property="twitter:description">
+<!-- title -->
+<title>
+  {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+</title>
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+
+<!-- description -->
+<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
 <meta property="og:type" content="website">
 <meta content="summary_large_image" name="twitter:card">
 <meta content="width=device-width, initial-scale=1" name="viewport">
+
+<!-- CSS -->
 <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/webflow.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/inog-website.webflow.css" rel="stylesheet" type="text/css">
