@@ -2508,7 +2508,7 @@ blockquote {
   border-radius: 6px;
 }
 
-.hero-insurance-bg {
+.hero-swoosh-bg {
   position: absolute;
   left: 0%;
   top: 0%;
@@ -4740,7 +4740,7 @@ blockquote {
     line-height: 1.6em;
   }
 
-  .hero-insurance-bg {
+  .hero-swoosh-bg {
     height: 70%;
   }
 
@@ -5701,7 +5701,7 @@ blockquote {
     margin-bottom: 0px;
   }
 
-  .hero-insurance-bg {
+  .hero-swoosh-bg {
     height: 70%;
   }
 
@@ -6798,7 +6798,7 @@ blockquote {
     line-height: 1.4em;
   }
 
-  .hero-insurance-bg {
+  .hero-swoosh-bg {
     height: 70%;
   }
 
