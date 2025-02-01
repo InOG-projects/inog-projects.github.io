@@ -23,7 +23,7 @@ title: Innovationsverbund Öffentliche Gesundheit e.V.
 email: kontakt@inoeg.de
 description: >- # this means to ignore newlines until "baseurl:"
   Wir verbinden den ÖGD mit Innovationen.
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.inoeg.de" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Specify used plugins here and in the Gemfile to ensure full flexibility.
