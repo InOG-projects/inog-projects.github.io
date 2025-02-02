@@ -162,11 +162,12 @@ blockquote {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  max-width: 1170px;
   height: 100px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 35px;
-  padding-left: 35px;
+  padding-right: 0px;
+  padding-left: 0px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
