@@ -1,13 +1,14 @@
-<!-- header start -->
-<div class="navbar w-nav">
-  <div class="navbar-background"></div>
-  <div class="nav-block">
-    {% include logo.html %}
-    {% include nav.html %}
-
-    <div class="menu-button w-nav-button">
-      <div class="menu-icon w-icon-nav-menu"></div>
-    </div>
-  </div>
-</div>
-<!-- header end -->
+<section class="top-nav">
+  {% include logo.html %}
+  <input id="menu-toggle" type="checkbox">
+  <label class="menu-button-container" for="menu-toggle">
+    <div class="menu-button"></div>
+  </label>
+  <ul class="menu">
+    <li><a href="https://www.iris-connect.de/" target="_blank">IRIS connect</a></li>
+    {% assign current = page.url | downcase | split: '/' %}
+    <li><a href="/projekte/" class="{% if current[1] == 'projekte' %}current{% endif %}">Projekte</a></li>
+    <li><a href="/veroeffentlichungen/" class="{% if current[1] == 'veroeffentlichungen' %}current{% endif %}">Veröffentlichungen</a>
+  <li><a href="/kontakt/" class="{% if current[1] == 'kontakt' %}current{% endif %}">Kontakt</a></li>
+  </ul>
+</section>

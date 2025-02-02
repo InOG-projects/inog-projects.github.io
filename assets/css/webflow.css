@@ -1143,9 +1143,7 @@ textarea.w-select {
   display: block;
   color: #222222;
 }
-.w-dropdown-link.w--current {
-  color: #0082f3;
-}
+
 .w-dropdown-link:focus {
   outline: 0;
 }
@@ -1604,47 +1602,14 @@ textarea.w-select {
   margin-left: 15px;
   clear: none;
 }
-.w-nav {
-  position: relative;
-  background: #dddddd;
-  z-index: 1000;
-}
-.w-nav:before,
-.w-nav:after {
-  content: " ";
-  display: table;
-  grid-column-start: 1;
-  grid-row-start: 1;
-  grid-column-end: 2;
-  grid-row-end: 2;
-}
-.w-nav:after {
-  clear: both;
-}
+
 .w-nav-brand {
   position: relative;
   float: left;
   text-decoration: none;
   color: #333333;
 }
-.w-nav-link {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
-  text-decoration: none;
-  color: #222222;
-  padding: 20px;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-}
-.w-nav-link.w--current {
-  color: #0082f3;
-}
-.w-nav-menu {
-  position: relative;
-  float: right;
-}
+
 [data-nav-menu-open] {
   display: block !important;
   position: absolute;
@@ -1655,10 +1620,6 @@ textarea.w-select {
   text-align: center;
   overflow: visible;
   min-width: 200px;
-}
-.w--nav-link-open {
-  display: block;
-  position: relative;
 }
 .w-nav-overlay {
   position: absolute;
@@ -1781,9 +1742,6 @@ textarea.w-select {
   cursor: pointer;
   color: #222222;
   background-color: #dddddd;
-}
-.w-tab-link.w--current {
-  background-color: #c8c8c8;
 }
 .w-tab-link:focus {
   outline: 0;

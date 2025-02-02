@@ -1,11 +1,16 @@
-<!-- nav start -->
-<nav role="navigation" class="nav-menu w-nav-menu">
-  <a href="https://www.iris-connect.de/" target="_blank" class="nav-link w-nav-link">IRIS connect</a>
-  {% assign current = page.url | downcase | split: '/' %}
-  <a href="/projekte/" class="nav-link w-nav-link {% if current[1] == 'projekte' %}w--current{% endif %}">Projekte</a>
-  <a href="/veroeffentlichungen/" aria-current="page" class="nav-link w-nav-link {% if current[1] == 'veroeffentlichungen' %}w--current{% endif %}">
-    Veröffentlichungen
-  </a>
-  <a href="/kontakt/" class="nav-link w-nav-link {% if current[1] == 'kontakt' %}w--current{% endif %}">Kontakt</a>
-</nav>
-<!-- nav end -->
+<section class="top-nav">
+  <div>
+    Logo Here
+  </div>
+  <input id="menu-toggle" type="checkbox" />
+  <label class='menu-button-container' for="menu-toggle">
+  <div class='menu-button'></div>
+</label>
+  <ul class="menu">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+    <li>Five</li>
+  </ul>
+</section>
