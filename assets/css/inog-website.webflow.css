@@ -3,7 +3,8 @@
 */
 
 a[href^="http"]:after {
-  content: " " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=);
+  content: " "
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=);
 }
 
 /* start nav */
@@ -67,12 +68,12 @@ a[href^="http"]:after {
 }
 
 .menu-button::before {
-  content: '';
+  content: "";
   margin-top: -8px;
 }
 
 .menu-button::after {
-  content: '';
+  content: "";
   margin-top: 8px;
 }
 
@@ -136,7 +137,6 @@ a[href^="http"]:after {
     vertical-align: middle;
   }
 }
-
 
 /* end nav */
 
@@ -321,8 +321,6 @@ blockquote {
   color: #2845ba;
   text-decoration: underline;
 }
-
-
 
 .phone-button {
   display: -webkit-box;
@@ -3024,7 +3022,6 @@ blockquote {
   object-fit: contain;
 }
 
-
 .paragraph-center {
   margin-right: 100px;
   margin-bottom: 40px;
@@ -3625,7 +3622,6 @@ blockquote {
   background-color: #fff;
   box-shadow: 0 40px 40px -20px rgba(0, 0, 0, 0.1);
 }
-
 
 .lola {
   height: 450px;
@@ -4807,8 +4803,6 @@ blockquote {
     padding-bottom: 30px;
   }
 
-
-
   .lola {
     height: auto;
     padding-top: 30px;
@@ -4876,7 +4870,6 @@ blockquote {
     padding: 12px 20px;
   }
 
-
   .dropdown-list.w--open {
     margin-left: 0px;
     border-radius: 6px;
@@ -4890,7 +4883,6 @@ blockquote {
     border-radius: 6px;
     box-shadow: none;
   }
-
 
   .form-one {
     margin-right: auto;
@@ -5008,8 +5000,6 @@ blockquote {
     margin-right: auto;
   }
 
-
-
   .section-title {
     margin-bottom: 30px;
     font-size: 28px;
@@ -5019,7 +5009,6 @@ blockquote {
   .top-line {
     margin-bottom: 15px;
   }
-
 
   .insurance-paragraph {
     line-height: 1.4em;
@@ -5705,7 +5694,6 @@ blockquote {
     font-size: 18px;
   }
 
-
   .phone-button {
     display: block;
     margin-right: 12px;
@@ -5726,7 +5714,6 @@ blockquote {
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
   }
-
 
   .phone-number {
     display: none;
@@ -5752,8 +5739,6 @@ blockquote {
     border: 1px solid #d8d8d8;
     border-radius: 6px;
   }
-
-
 
   .form-one {
     display: block;
@@ -6530,7 +6515,6 @@ blockquote {
     margin-top: 25px;
     margin-bottom: 15px;
   }
-
 
   .hero-image-insurace-boxes {
     margin-top: 0px;
