@@ -6,9 +6,9 @@ redirect_from:
   - /contact/
   - /contact-us.html
 ---
-
 Sie erreichen uns am Einfachsten per Email unter {{ site.email }}.
-
+<br>
+<br>
 Bzgl. spezifischer Anfragen können Sie uns auch gerne wie folgt kontaktieren:
 
 - **Allgemeine Anfragen**: {{ site.email }}

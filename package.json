@@ -6,7 +6,7 @@
   },
   "scripts": {
     "build": "bundle exec jekyll build",
-    "dev": "bundle exec jekyll serve --host localhost --port 4000 --open-url",
+    "dev": "bundle exec jekyll serve --host localhost --port 4000 --livereload --open-url",
     "format": "prettier --list-different --write . --ignore-path ''",
     "rubocop": "bundle exec rubocop",
     "test-links": "bundle exec htmlproofer --assume_extension '.html' ./_site --ignore-urls \"/^http://127.0.0.1/,/^http://0.0.0.0/,/^http://localhost/\" --disable-external"

@@ -1,3 +1,15 @@
+/*
+  Start from Jan
+*/
+
+a[href^="http"]:after {
+  content: " " url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVklEQVR4Xn3PgQkAMQhDUXfqTu7kTtkpd5RA8AInfArtQ2iRXFWT2QedAfttj2FsPIOE1eCOlEuoWWjgzYaB/IkeGOrxXhqB+uA9Bfcm0lAZuh+YIeAD+cAqSz4kCMUAAAAASUVORK5CYII=);
+}
+/*
+  End from Jan
+*/
+
+
 .w-layout-grid {
   display: -ms-grid;
   display: grid;
@@ -693,7 +705,7 @@ blockquote {
   display: flex;
   width: 100%;
   max-width: 1170px;
-  margin: 80px 35px;
+  margin: 20px 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -2554,8 +2566,9 @@ blockquote {
 }
 
 .content-box {
+  width: 100%;
   margin-top: 0px;
-  padding: 30px;
+  padding: 20px;
   border: 1px solid #d8d8d8;
   border-radius: 6px;
   background-color: #fff;
@@ -2972,21 +2985,13 @@ blockquote {
   display: flex;
   width: 100%;
   max-width: 1170px;
-  margin: 100px 35px 80px;
+  margin: 100px 35px 40px;
   padding-top: 60px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.single-hero-block.blog-margin {
-  margin-bottom: 0px;
-}
-
-.single-hero-block.lower {
-  margin-bottom: 40px;
 }
 
 .hero-image-insurace-boxes {
@@ -4068,7 +4073,7 @@ blockquote {
   }
 
   .block-content {
-    margin: 60px 35px;
+    margin: 20px 10px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -4700,7 +4705,7 @@ blockquote {
     margin-top: 0px;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 40px;
+    padding-left: 10px;
   }
 
   .car-insurance-box {
@@ -4822,10 +4827,6 @@ blockquote {
 
   .single-hero-block {
     margin: 0px 35px 30px;
-  }
-
-  .single-hero-block.blog-margin {
-    margin-bottom: 30px;
   }
 
   .hero-image-insurace-boxes {
@@ -5152,7 +5153,7 @@ blockquote {
   }
 
   .block-content {
-    margin: 30px 16px;
+    margin: 20px 10px;
   }
 
   .block-content.customer-margin {
@@ -5771,10 +5772,6 @@ blockquote {
   .single-hero-block {
     margin: 60px 16px;
     padding-top: 0px;
-  }
-
-  .single-hero-block.blog-margin {
-    margin-bottom: 0px;
   }
 
   .hero-image-insurace-boxes {
@@ -6716,7 +6713,7 @@ blockquote {
   }
 
   .content-box {
-    padding: 20px;
+    padding: 10px;
   }
 
   .car-insurance-box {
@@ -6794,9 +6791,6 @@ blockquote {
     margin-bottom: 15px;
   }
 
-  .single-hero-block.blog-margin {
-    margin-bottom: 15px;
-  }
 
   .hero-image-insurace-boxes {
     margin-top: 0px;
