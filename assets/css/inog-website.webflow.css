@@ -762,22 +762,6 @@ blockquote {
   display: flex;
 }
 
-.block-content.template-info {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-}
-
 .block-content.top-margin {
   margin-top: 160px;
 }
@@ -977,7 +961,7 @@ blockquote {
   display: grid;
   width: 100%;
   justify-items: stretch;
-  grid-auto-columns: 1fr;
+  grid-auto-columns: auto;
   grid-auto-rows: minmax(auto, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
@@ -2569,7 +2553,7 @@ blockquote {
   box-shadow: 14px 14px 0 0 #ffeaea;
 }
 
-.health-insurance-box {
+.content-box {
   margin-top: 0px;
   padding: 30px;
   border: 1px solid #d8d8d8;
@@ -2581,7 +2565,7 @@ blockquote {
   cursor: crosshair;
 }
 
-.health-insurance-box:hover {
+.content-box:hover {
   border: 1px solid #d8d8d8;
   box-shadow: 14px 14px 0 0 #ffe7e7;
 }
@@ -4198,7 +4182,7 @@ blockquote {
   .grid-insurance-boxes {
     display: -ms-grid;
     display: grid;
-    grid-auto-columns: 1fr;
+    grid-auto-columns: auto;
     grid-column-gap: 30px;
     grid-row-gap: 30px;
     -ms-grid-columns: 1fr;
@@ -4711,7 +4695,7 @@ blockquote {
     padding: 20px;
   }
 
-  .health-insurance-box {
+  .content-box {
     height: auto;
     margin-top: 0px;
     padding-top: 40px;
@@ -4851,7 +4835,6 @@ blockquote {
   .hero-image-one-form {
     margin-top: 80px;
   }
-
 
   .quarano {
     height: auto;
@@ -5668,13 +5651,13 @@ blockquote {
     box-shadow: 7px 7px 0 0 #ffeaea;
   }
 
-  .health-insurance-box {
+  .content-box {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
   }
 
-  .health-insurance-box:hover {
+  .content-box:hover {
     box-shadow: none;
   }
 
@@ -6732,7 +6715,7 @@ blockquote {
     padding: 20px;
   }
 
-  .health-insurance-box {
+  .content-box {
     padding: 20px;
   }
 
@@ -7034,18 +7017,6 @@ blockquote {
   grid-row-end: span 1;
 }
 
-
-#w-node-_4ca6bbab-8f11-2642-374a-a98c968c1c7f-faa2a0a4 {
-  -ms-grid-row: span 1;
-  grid-row-start: span 1;
-  -ms-grid-row-span: 1;
-  grid-row-end: span 1;
-  -ms-grid-column: span 1;
-  grid-column-start: span 1;
-  -ms-grid-column-span: 1;
-  grid-column-end: span 1;
-}
-
 #w-node-_4ca6bbab-8f11-2642-374a-a98c968c1c91-faa2a0a4 {
   -ms-grid-column: span 1;
   grid-column-start: span 1;
@@ -7212,6 +7183,7 @@ blockquote {
     -ms-grid-column-align: center;
     justify-self: center;
   }
+}
 
 @font-face {
   font-family: "Inter";
