@@ -1041,6 +1041,7 @@ blockquote {
 
 .paragraph-left {
   margin-bottom: 50px;
+  padding-right: 20px;
 }
 
 .grid-content {
@@ -4048,7 +4049,7 @@ blockquote {
 
   .paragraph-left {
     line-height: 1.4em;
-    text-align: center;
+    text-align: left;
   }
 
   .grid-content {
@@ -5039,7 +5040,7 @@ blockquote {
   .paragraph-left {
     margin-bottom: 20px;
     line-height: 1.4em;
-    text-align: center;
+    text-align: left;
   }
 
   .grid-content {
@@ -5923,7 +5924,7 @@ blockquote {
   .paragraph-left {
     font-size: 16px;
     line-height: 1.4em;
-    text-align: center;
+    text-align: left;
   }
 
   .grid-content {
