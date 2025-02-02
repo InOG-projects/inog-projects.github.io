@@ -827,57 +827,6 @@ blockquote {
   margin-bottom: 0px;
 }
 
-.health-insurance-block {
-  height: 110%;
-  margin-top: 30px;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-left: 30px;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  background-color: #f2feff;
-  -webkit-transition:
-    box-shadow 200ms ease-in-out,
-    background-color 200ms ease-in-out;
-  transition:
-    box-shadow 200ms ease-in-out,
-    background-color 200ms ease-in-out;
-}
-
-.health-insurance-block:hover {
-  border-color: #d8d8d8;
-  background-color: #fff;
-  box-shadow: 0 40px 40px -20px rgba(0, 0, 0, 0.1);
-}
-
-.health-insurance-block.impftermin {
-  height: 95%;
-  margin-top: 15px;
-  padding-top: 0px;
-  background-color: #fceed5;
-}
-
-.pet-insurance-block {
-  height: auto;
-  margin-top: 53px;
-  padding: 50px 30px 44px;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  background-color: rgba(214, 205, 208, 0.61);
-  -webkit-transition:
-    box-shadow 200ms ease-in-out,
-    background-color 200ms ease-in-out;
-  transition:
-    box-shadow 200ms ease-in-out,
-    background-color 200ms ease-in-out;
-}
-
-.pet-insurance-block:hover {
-  border: 1px solid #d8d8d8;
-  background-color: #fff;
-  box-shadow: 0 40px 40px -20px rgba(0, 0, 0, 0.1);
-}
-
 .read-more {
   color: #2845ba;
   line-height: 24px;
@@ -913,27 +862,6 @@ blockquote {
   height: 2px;
   margin-bottom: 30px;
   background-color: #041735;
-}
-
-.car-insurance-block {
-  height: auto;
-  margin-top: auto;
-  padding: 0px 30px 25px;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  background-color: rgba(129, 198, 255, 0.61);
-  -webkit-transition:
-    box-shadow 200ms ease-in-out,
-    background-color 200ms ease-in-out;
-  transition:
-    box-shadow 200ms ease-in-out,
-    background-color 200ms ease-in-out;
-}
-
-.car-insurance-block:hover {
-  border-color: #d8d8d8;
-  background-color: #fff;
-  box-shadow: 0 40px 40px -20px rgba(0, 0, 0, 0.1);
 }
 
 .insurance-paragraph {
@@ -3020,12 +2948,6 @@ blockquote {
   object-fit: contain;
 }
 
-.image-license {
-  width: 100%;
-  height: 150px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
 
 .paragraph-center {
   margin-right: 100px;
@@ -3161,29 +3083,6 @@ blockquote {
 
 .healthident:hover {
   border-color: #d8d8d8;
-  background-color: #fff;
-  box-shadow: 0 40px 40px -20px rgba(0, 0, 0, 0.1);
-}
-
-.darfichdas {
-  height: auto;
-  margin-top: 69px;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-left: 30px;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  background-color: rgba(40, 0, 219, 0.09);
-  -webkit-transition:
-    box-shadow 200ms ease-in-out,
-    background-color 200ms ease-in-out;
-  transition:
-    box-shadow 200ms ease-in-out,
-    background-color 200ms ease-in-out;
-}
-
-.darfichdas:hover {
-  border: 1px solid #d8d8d8;
   background-color: #fff;
   box-shadow: 0 40px 40px -20px rgba(0, 0, 0, 0.1);
 }
@@ -3651,49 +3550,6 @@ blockquote {
   box-shadow: 0 40px 40px -20px rgba(0, 0, 0, 0.1);
 }
 
-.car-insurance-block-copy {
-  height: 550px;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-left: 30px;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  background-color: rgba(129, 198, 255, 0.61);
-  -webkit-transition:
-    box-shadow 200ms ease-in-out,
-    background-color 200ms ease-in-out;
-  transition:
-    box-shadow 200ms ease-in-out,
-    background-color 200ms ease-in-out;
-}
-
-.car-insurance-block-copy:hover {
-  border-color: #d8d8d8;
-  background-color: #fff;
-  box-shadow: 0 40px 40px -20px rgba(0, 0, 0, 0.1);
-}
-
-.car-insurance-block-copy-copy {
-  height: 550px;
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-left: 30px;
-  border: 1px solid transparent;
-  border-radius: 6px;
-  background-color: rgba(129, 198, 255, 0.61);
-  -webkit-transition:
-    box-shadow 200ms ease-in-out,
-    background-color 200ms ease-in-out;
-  transition:
-    box-shadow 200ms ease-in-out,
-    background-color 200ms ease-in-out;
-}
-
-.car-insurance-block-copy-copy:hover {
-  border-color: #d8d8d8;
-  background-color: #fff;
-  box-shadow: 0 40px 40px -20px rgba(0, 0, 0, 0.1);
-}
 
 .lola {
   height: 450px;
@@ -3767,10 +3623,11 @@ blockquote {
   grid-template-rows: auto auto auto;
 }
 
-.iris {
+.projekt-block {
   height: auto;
-  margin-top: -61px;
+  margin-top: 10px;
   padding-top: 0px;
+  padding-bottom: 10px;
   padding-right: 30px;
   padding-left: 30px;
   border: 1px solid transparent;
@@ -3784,7 +3641,7 @@ blockquote {
     background-color 200ms ease-in-out;
 }
 
-.iris:hover {
+.projekt-block:hover {
   border: 1px solid #d8d8d8;
   background-color: #fff;
   box-shadow: 0 40px 40px -20px rgba(0, 0, 0, 0.1);
@@ -4137,20 +3994,6 @@ blockquote {
     padding-bottom: 0px;
   }
 
-  .health-insurance-block {
-    height: auto;
-    margin-top: 0px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .pet-insurance-block {
-    height: auto;
-    margin-top: 0px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
   .section-title {
     margin-bottom: 30px;
     line-height: 1.4em;
@@ -4160,12 +4003,6 @@ blockquote {
   .top-line {
     margin-right: auto;
     margin-left: auto;
-  }
-
-  .car-insurance-block {
-    height: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
   }
 
   .insurance-paragraph {
@@ -4874,13 +4711,6 @@ blockquote {
     padding-bottom: 30px;
   }
 
-  .darfichdas {
-    height: auto;
-    margin-top: 0px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
   .protano {
     height: auto;
     margin-top: 0px;
@@ -4977,17 +4807,7 @@ blockquote {
     padding-bottom: 30px;
   }
 
-  .car-insurance-block-copy {
-    height: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 
-  .car-insurance-block-copy-copy {
-    height: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 
   .lola {
     height: auto;
@@ -5002,7 +4822,7 @@ blockquote {
     padding-bottom: 30px;
   }
 
-  .iris {
+  .projekt-block {
     height: auto;
     margin-top: 0px;
     padding-top: 30px;
@@ -5207,15 +5027,7 @@ blockquote {
     margin-right: auto;
   }
 
-  .health-insurance-block {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 
-  .pet-insurance-block {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 
   .section-title {
     margin-bottom: 30px;
@@ -5227,10 +5039,6 @@ blockquote {
     margin-bottom: 15px;
   }
 
-  .car-insurance-block {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
 
   .insurance-paragraph {
     line-height: 1.4em;
@@ -5802,11 +5610,6 @@ blockquote {
     padding-bottom: 30px;
   }
 
-  .darfichdas {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
   .protano {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -5883,16 +5686,6 @@ blockquote {
     padding-bottom: 30px;
   }
 
-  .car-insurance-block-copy {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
-  .car-insurance-block-copy-copy {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-
   .lola {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -5903,7 +5696,7 @@ blockquote {
     padding-bottom: 30px;
   }
 
-  .iris {
+  .projekt-block {
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -6148,22 +5941,10 @@ blockquote {
     margin-left: auto;
   }
 
-  .health-insurance-block {
-    padding: 24px;
-  }
-
-  .pet-insurance-block {
-    padding: 24px;
-  }
-
   .section-title {
     margin-bottom: 40px;
     font-size: 28px;
     line-height: 1.2em;
-  }
-
-  .car-insurance-block {
-    padding: 24px;
   }
 
   .insurance-paragraph {
@@ -6835,10 +6616,6 @@ blockquote {
     padding: 24px;
   }
 
-  .darfichdas {
-    padding: 24px;
-  }
-
   .protano {
     padding: 24px;
   }
@@ -6900,14 +6677,6 @@ blockquote {
     padding: 24px;
   }
 
-  .car-insurance-block-copy {
-    padding: 24px;
-  }
-
-  .car-insurance-block-copy-copy {
-    padding: 24px;
-  }
-
   .lola {
     padding: 24px;
   }
@@ -6916,7 +6685,7 @@ blockquote {
     padding: 24px;
   }
 
-  .iris {
+  .projekt-block {
     padding: 24px;
   }
 }
