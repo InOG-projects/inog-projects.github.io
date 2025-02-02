@@ -4043,6 +4043,7 @@ blockquote {
 
   .content-right {
     margin-left: 0px;
+    float: right;
   }
 
   .paragraph-left {
@@ -6670,15 +6671,6 @@ blockquote {
   align-self: center;
   -ms-grid-column-align: start;
   justify-self: start;
-}
-
-#w-node-_99eb08f3-4185-958c-94d3-95a906672560-b2226ec5 {
-  -ms-grid-column-align: center;
-  justify-self: center;
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
 }
 
 #w-node-aefb4a4b-a84d-6b01-0247-04a27a2e9b95-b2226ec5 {
