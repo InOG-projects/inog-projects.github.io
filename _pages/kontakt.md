@@ -5,6 +5,7 @@ permalink: /kontakt/
 redirect_from:
   - /contact/
   - /contact-us.html
+og_image: /assets/images/hero-inoeg_sw-p-500.png
 ---
 
 Sie erreichen uns am Einfachsten per Email unter {{ site.email }}. <br> <br> Bzgl. spezifischer Anfragen können Sie uns auch gerne wie folgt kontaktieren:

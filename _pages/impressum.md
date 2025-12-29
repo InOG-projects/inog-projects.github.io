@@ -5,6 +5,7 @@ sitemap: true
 permalink: /impressum/
 redirect_from:
   - /impressum.html
+og_image: /assets/images/hero-inoeg_sw-p-500.png
 ---
 
 Innovationsverbund Öffentliche Gesundheit e.V. vertreten durch:
