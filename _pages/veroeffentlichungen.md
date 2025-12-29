@@ -6,6 +6,12 @@ redirect_from:
   - /veroeffentlichungen.html
 ---
 ### 2025
+<br>
+#### 39C3 Talk: «Schlechte Karten»: Jahr 0 nach der ePA
+
+39C3 Talk von Bianca Kastl vom 29.12.2024
+<br>
+[Slides hier herunterladen](/documents/39c3_bkastl_schlechte_karten_epa_opt_compressed_ccby.pdf)
 
 <br>
 #### Offener Brief: Fünf Schritte zu mehr Vertrauen in die ePA
