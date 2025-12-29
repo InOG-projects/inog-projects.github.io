@@ -1,3 +1,3 @@
 # README
 
-Dieses Repo enthält unsere akutelle Website.
+Dieses Repo enthält unsere aktuelle Website.
