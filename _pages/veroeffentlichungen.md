@@ -9,7 +9,7 @@ redirect_from:
 <br>
 #### 39C3 Talk: Schlechte Karten: IT-Sicherheit im Jahr null der ePA für alle
 
-39C3 Talk von Bianca Kastl vom 29.12.2024
+39C3 Talk von Bianca Kastl vom 29.12.2025
 <br>
 [Slides hier herunterladen](/documents/39c3_bkastl_schlechte_karten_epa_opt_compressed_ccby.pdf)
 
