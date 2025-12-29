@@ -2,7 +2,7 @@
 layout: default
 title: Veröffentlichungen zum Download
 permalink: /veroeffentlichungen/
-description: Talks und Publikationen des InÖG - Sicherheitsforschung zur ePA und Open Source Healthcare
+description: Talks und Publikationen der InÖG-Sicherheitsforscher zur ePA und Open Source Healthcare
 og_image: /assets/images/hero-inoeg_sw-p-500.png
 redirect_from:
   - /veroeffentlichungen.html
