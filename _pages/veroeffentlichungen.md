@@ -15,6 +15,8 @@ redirect_from:
 <br>
 [Slides hier herunterladen](/documents/39c3_bkastl_schlechte_karten_epa_opt_compressed_ccby.pdf)
 
+[Talk hier online schauen](https://media.ccc.de/v/39c3-schlechte-karten-it-sicherheit-im-jahr-null-der-epa-fur-alle)
+
 <br>
 #### Offener Brief: Fünf Schritte zu mehr Vertrauen in die ePA
 
