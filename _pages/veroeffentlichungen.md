@@ -7,16 +7,17 @@ og_image: /assets/images/hero-inoeg_sw-p-500.png
 redirect_from:
   - /veroeffentlichungen.html
 ---
-### 2025
-<br>
+## 2025
+
 #### 39C3 Talk: Schlechte Karten: IT-Sicherheit im Jahr null der ePA für alle
 
 39C3 Talk von Bianca Kastl vom 29.12.2025
 <br>
+<br>
 [Slides hier herunterladen](/documents/39c3_bkastl_schlechte_karten_epa_opt_compressed_ccby.pdf)
 
 [Talk hier online schauen](https://media.ccc.de/v/39c3-schlechte-karten-it-sicherheit-im-jahr-null-der-epa-fur-alle)
-
+<br>
 <br>
 #### Offener Brief: Fünf Schritte zu mehr Vertrauen in die ePA
 
@@ -24,9 +25,8 @@ redirect_from:
 <br>
 <br>
 
-### 2024
+## 2024
 
-<br>
 #### 38C3 Talk: «Konnte bisher noch nie gehackt werden»: Die elektronische Patientenakte kommt – jetzt für alle
 
 38C3 Talk von Bianca Kastl und Martin Tschirsich vom 27.12.2024
@@ -104,9 +104,8 @@ gestellt werden.
 <br>
 <br>
 
-### 2023
+## 2023
 
-<br>
 #### Vertrauen lässt sich nicht verordnen - Zivilgesellschaftliches Bündnis fordert Anpassungen der Digitalisierung des Gesundheitswesens
 
 Ein Bündnis aus digitaler Zivilgesellschaft und Selbsthilfe-Organisationen fordert in einem offenen Brief Korrekturen an der Ausgestaltung der Digitalisierung
@@ -154,9 +153,8 @@ jetzt dringend ihre digitalpolitischen Versprechen aus dem Koalitionsvertrag ums
 <br>
 <br>
 
-### 2021
+## 2021
 
-<br>
 #### Das virtuelle Gesundheitsamt: 8 Kernforderungen
 
 Aus Sicht des Innovationsverbunds Öffentliche Gesundheit (InÖG), der Björn SteigerStiftung (BSS), der CIO Corporate Citizens (I3C) und des Fraunhofer ISST
