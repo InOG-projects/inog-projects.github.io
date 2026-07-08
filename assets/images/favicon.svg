@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- InÖG diamond-grid mark, extracted from the official logo (InÖG_Logo_1.1). -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176.3 177" role="img" aria-label="InÖG">
+  <g fill="#00ffa8">
+    <polygon points="89.6,42.5 96.4,7.5 131.5,0.7 124.7,35.7" />
+    <polygon points="44.8,42.5 50.6,6.4 86.7,0.7 80.9,36.8" />
+    <polygon points="44.8,87.4 53.7,54.4 86.7,45.5 77.8,78.5" />
+    <polygon points="89.6,87.4 99.6,55.4 131.5,45.5 121.6,77.4" />
+    <polygon points="134.5,87.4 145.5,56.5 176.3,45.5 165.3,76.4" />
+    <polygon points="0,87.4 7.8,53.3 41.9,45.5 34,79.5" />
+    <polygon points="0,132.2 11,101.3 41.9,90.3 30.9,121.2" />
+    <polygon points="44.8,132.2 56.9,102.4 86.7,90.3 74.6,120.1" />
+    <polygon points="89.6,132.2 102.7,103.4 131.5,90.3 118.4,119.1" />
+    <polygon points="134.5,132.2 148.6,104.4 176.3,90.3 162.2,118.1" />
+    <polygon points="44.8,177 60,150.3 86.7,135.1 71.5,161.8" />
+    <polygon points="89.6,177 105.9,151.4 131.5,135.1 115.3,160.8" />
+  </g>
+</svg>
