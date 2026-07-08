@@ -67,3 +67,4 @@ exclude:
 include:
   - _pages # static content
   - _posts # for blog / news posts
+  - .well-known # security.txt (RFC 9116); dot-dirs are excluded by default
