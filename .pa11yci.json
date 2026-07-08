@@ -1,0 +1,22 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "timeout": 30000,
+    "wait": 500,
+    "runners": ["axe", "htmlcs"],
+    "ignore": ["notice", "warning"],
+    "chromeLaunchConfig": {
+      "args": ["--no-sandbox", "--disable-dev-shm-usage"]
+    }
+  },
+  "urls": [
+    "http://localhost:8080/",
+    "http://localhost:8080/projekte/",
+    "http://localhost:8080/veroeffentlichungen/",
+    "http://localhost:8080/kontakt/",
+    "http://localhost:8080/impressum/",
+    "http://localhost:8080/datenschutz/",
+    "http://localhost:8080/offenerbrief-epa-2025/",
+    "http://localhost:8080/404/"
+  ]
+}
