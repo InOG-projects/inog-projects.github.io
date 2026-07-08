@@ -21,16 +21,20 @@
   stricter style-src without 'unsafe-inline' would break their layout, and a
   CSP that breaks styling is worse than no CSP.
 
-  X-Content-Type-Options and X-Frame-Options are deliberately NOT emitted as
-  meta tags: both directives are only honored by browsers when sent as real
-  HTTP response headers and have no effect via <meta http-equiv>. Enforcing
-  them requires either GitHub Pages gaining header support or fronting the
-  site with something that can inject headers (e.g. Cloudflare Transform
-  Rules / a Worker).
+  X-Content-Type-Options, X-Frame-Options, and the CSP `frame-ancestors`
+  directive are deliberately NOT included here: they are only honored by
+  browsers when delivered as real HTTP response headers and are ignored via
+  <meta http-equiv> (frame-ancestors logs a console warning if left in).
+  Enforcing them requires either GitHub Pages gaining header support or
+  fronting the site with something that can inject headers (e.g. Cloudflare
+  Transform Rules / a Worker).
+
+  font-src allows data: because the Webflow CSS embeds an icon font as a
+  data:application/x-font-ttf URI.
 -->
 <meta
   http-equiv="Content-Security-Policy"
-  content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'">
+  content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
 <!-- title -->
