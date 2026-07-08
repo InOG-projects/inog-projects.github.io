@@ -1,3 +1,4 @@
+<a href="#main" class="skip-link">Zum Inhalt springen</a>
 <section class="top-nav">
   {% include logo.html %}
   <input id="menu-toggle" type="checkbox">
@@ -5,7 +6,7 @@
     <div class="menu-button"></div>
   </label>
   <ul class="menu">
-    <li><a href="https://www.iris-connect.de/" target="_blank">IRIS connect</a></li>
+    <li><a href="https://www.iris-connect.de/" target="_blank" rel="noopener">IRIS connect</a></li>
     {% assign current = page.url | downcase | split: '/' %}
     <li><a href="/projekte/" class="{% if current[1] == 'projekte' %}current{% endif %}">Projekte</a></li>
     <li><a href="/veroeffentlichungen/" class="{% if current[1] == 'veroeffentlichungen' %}current{% endif %}">Veröffentlichungen</a></li>

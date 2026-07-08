@@ -10,20 +10,22 @@
   <body>
     {% include header.html %}
 
-    <div class="section wf-section">
-      <div class="single-hero-block">
-        <h1 class="single-page-title">{{ page.title | default: site.title }}</h1>
-      </div>
-    </div>
-    <div class="section wf-section">
-      <div class="block-content">
-        <div class="content-box">
-          <!-- content start -->
-          {{ content }}
-          <!-- content end -->
+    <main id="main">
+      <div class="section wf-section">
+        <div class="single-hero-block">
+          <h1 class="single-page-title">{{ page.title | default: site.title }}</h1>
         </div>
       </div>
-    </div>
+      <div class="section wf-section">
+        <div class="block-content">
+          <div class="content-box">
+            <!-- content start -->
+            {{ content }}
+            <!-- content end -->
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer>
       {% include footer.html %}
