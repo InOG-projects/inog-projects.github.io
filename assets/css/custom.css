@@ -17,3 +17,27 @@
 .skip-link:focus {
   left: 0;
 }
+
+/* Per-project card tints. Extracted from inline style="background-color: …"
+   attributes on the .projekt-block cards in _pages/projekte.html so the CSP
+   can drop 'unsafe-inline' from style-src. Colours are unchanged. */
+.projekt-block--impfen {
+  background-color: #fceed5;
+}
+.projekt-block--labhive {
+  background-color: rgba(129, 198, 255, 0.61);
+}
+.projekt-block--coronika {
+  background-color: rgba(214, 205, 208, 0.61);
+}
+.projekt-block--dw {
+  background-color: #f2feff;
+}
+.projekt-block--did {
+  background-color: rgba(40, 0, 219, 0.09);
+}
+
+/* Text alignment utility (was inline style="text-align: end"). */
+.text-end {
+  text-align: end;
+}
