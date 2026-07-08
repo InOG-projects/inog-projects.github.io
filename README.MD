@@ -14,3 +14,9 @@ Lokal laufen lassen:
 ### Update aller Deps
 
 `bundle update`
+
+### Projektnotizen
+
+Wichtige, nicht offensichtliche Fakten zum Repo (Build/Deploy, CSP, SEO)
+liegen unter [`memory/`](memory/README.md). Der Ordner wird nicht auf die
+Website veröffentlicht.
