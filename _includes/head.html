@@ -29,12 +29,14 @@
   fronting the site with something that can inject headers (e.g. Cloudflare
   Transform Rules / a Worker).
 
-  font-src allows data: because the Webflow CSS embeds an icon font as a
-  data:application/x-font-ttf URI.
+  All fonts are same-origin (the Inter webfont under /assets/fonts/), so
+  font-src is 'self'. The unused Webflow icon font that was embedded as a
+  data: URI has been removed from webflow.css, so no data: font allowance is
+  needed.
 -->
 <meta
   http-equiv="Content-Security-Policy"
-  content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
 <!-- title -->
