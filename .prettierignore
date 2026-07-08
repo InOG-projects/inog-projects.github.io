@@ -1,3 +1,7 @@
 # Prettier Ignore
 *.css
 node_modules/
+# Generated / vendored output — never format these
+_site/
+vendor/
+.jekyll-cache/

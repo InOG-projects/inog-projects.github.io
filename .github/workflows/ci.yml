@@ -56,4 +56,4 @@ jobs:
         continue-on-error: true
 
       - name: Check formatting (Prettier)
-        run: npx prettier --check . --ignore-path ''
+        run: npx prettier --check .
