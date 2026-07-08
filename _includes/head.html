@@ -14,28 +14,27 @@
 <meta property="og:site_name" content="{{ site.title }}">
 
 <!-- Open Graph Image Tags -->
-{% if page.og_image %}
-  <meta property="og:image" content="{{ page.og_image | absolute_url }}">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:type" content="image/png">
-{% else %}
-  <meta property="og:image" content="{{ '/assets/images/og-image-default.png' | absolute_url }}">
+{% comment %}
+  Per-page `og_image` wins; otherwise fall back to `site.og_image_default`
+  (set in _config.yml). If neither is set, no image tag is emitted so we never
+  reference a non-existent file.
+{% endcomment %}
+{% assign share_image = page.og_image | default: site.og_image_default %}
+{% if share_image %}
+  <meta property="og:image" content="{{ share_image | absolute_url }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/png">
 {% endif %}
 
 <!-- Twitter Card Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="{% if share_image %}summary_large_image{% else %}summary{% endif %}">
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-{% if page.og_image %}
-  <meta name="twitter:image" content="{{ page.og_image | absolute_url }}">
-{% else %}
-  <meta name="twitter:image" content="{{ '/assets/images/og-image-default.png' | absolute_url }}">
+{% if share_image %}
+  <meta name="twitter:image" content="{{ share_image | absolute_url }}">
+  <meta name="twitter:image:alt" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 {% endif %}
-<meta name="twitter:image:alt" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 
 <!-- Standard Meta Tags -->
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
@@ -49,3 +48,4 @@
 <link href="/assets/css/normalize.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/webflow.css" rel="stylesheet" type="text/css">
 <link href="/assets/css/inog-website.webflow.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/custom.css" rel="stylesheet" type="text/css">
