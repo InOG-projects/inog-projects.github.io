@@ -32,15 +32,10 @@ url: "https://www.inoeg.de" # the base hostname & protocol for your site, e.g. h
 # override this via the `og_image` front-matter key.
 og_image_default: ""
 
-# Specify used plugins here and in the Gemfile to ensure full flexibility.
-# Note that github pages only supports plugins that are specified in _config.yml
+# Plugins. The site is built with `bundle exec jekyll build` in CI (not the
+# github-pages gem), so it is NOT restricted to the GitHub Pages plugin
+# allowlist — any Jekyll plugin listed here and in the Gemfile works.
 plugins:
-  - jekyll-feed
-  - jekyll-redirect-from
-  - jekyll-sitemap
-
-# List the same plugins again to  mimic GitHub Pages with --safe
-whitelist:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-sitemap
