@@ -57,6 +57,12 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - bin/
+  - memory/ # internal project notes, not part of the published site
+  - README.MD
+  - package.json
+  - package-lock.json
+  - scripts/
+  - purgecss.config.js
 
 # But make sure to process the following directories and their entries.
 include:
