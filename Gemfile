@@ -1,5 +1,14 @@
 # frozen_string_literal: true
 
+# Some documents/ filenames contain umlauts (e.g. "InÖG", "Prüfsteine"). If the
+# shell has no UTF-8 locale set, Ruby reads those filenames as ASCII-8BIT and
+# Jekyll's URL escaping dies with:
+#   `String#encode': "\xC3" from ASCII-8BIT to UTF-8 (Encoding::UndefinedConversionError)
+# CI's Ubuntu runners happen to default to UTF-8, but a bare shell on macOS does
+# not, so pin it here — the Gemfile is loaded by every `bundle exec` invocation.
+Encoding.default_external = Encoding::UTF_8
+Encoding.default_internal = Encoding::UTF_8
+
 source "https://rubygems.org"
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ site.locale | default: 'de-DE' }}">
+  <head>
+    <!--
+      Overrides the layout bundled with jekyll-redirect-from. The gem's version
+      redirects with an inline script tag, which this site's Content-Security-Policy
+      (default-src 'self', no script-src 'unsafe-inline') blocks. GitHub Pages
+      serves static files only, so a real 301 is not possible either; the
+      meta-refresh below is the redirect, and it is not subject to the CSP.
+    -->
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="{{ page.redirect.to }}">
+    <title>Weiterleitung&hellip;</title>
+  </head>
+  <body>
+    <h1>Weiterleitung&hellip;</h1>
+    <p>
+      <a href="{{ page.redirect.to }}">Hier klicken, falls die Weiterleitung nicht automatisch erfolgt.</a>
+    </p>
+  </body>
+</html>

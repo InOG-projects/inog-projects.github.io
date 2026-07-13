@@ -1,0 +1,9 @@
+---
+# Lowercase alias for /1MATAG. Deliberately a separate source file rather than a
+# `redirect_from:` on the uppercase page: on a case-insensitive filesystem (macOS)
+# Jekyll would write _site/1matag.html and _site/1MATAG.html to the SAME path, and
+# the alias would silently overwrite the real page, leaving a self-redirect loop.
+permalink: /1matag
+redirect_to: /documents/20240703-atag-1-monat-v0.9.1.pdf
+sitemap: false
+---

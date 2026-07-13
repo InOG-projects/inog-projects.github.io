@@ -1,0 +1,9 @@
+---
+# Uppercase alias for /egom. Deliberately a separate source file rather than a
+# `redirect_from:` on the lowercase page: on a case-insensitive filesystem (macOS)
+# Jekyll would write _site/egom.html and _site/EGOM.html to the SAME path, and
+# the alias would silently overwrite the real page, leaving a self-redirect loop.
+permalink: /EGOM
+redirect_to: /documents/20240826-egom-eudi-wallet-infrastructures.pdf
+sitemap: false
+---

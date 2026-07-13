@@ -1,0 +1,9 @@
+---
+# Lowercase alias for /BN24. Deliberately a separate source file rather than a
+# `redirect_from:` on the uppercase page: on a case-insensitive filesystem (macOS)
+# Jekyll would write _site/bn24.html and _site/BN24.html to the SAME path, and
+# the alias would silently overwrite the real page, leaving a self-redirect loop.
+permalink: /bn24
+redirect_to: /documents/20240913-bildet-netze-konsultationsprozesse.pdf
+sitemap: false
+---
