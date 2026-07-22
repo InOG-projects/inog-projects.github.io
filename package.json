@@ -4,7 +4,7 @@
     "@shopify/prettier-plugin-liquid": "^1.10.3",
     "http-server": "^14.1.1",
     "pa11y-ci": "^4.1.1",
-    "prettier": "^3.9.4",
+    "prettier": "^3.9.6",
     "purgecss": "^8.0.0",
     "start-server-and-test": "^3.0.11"
   },
