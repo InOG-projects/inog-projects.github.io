@@ -42,7 +42,10 @@ overrides:
       - "*.md"
     options:
       parser: markdown
-      proseWrap: always
+      # preserve = Prettier lässt vorhandene Zeilenumbrüche in Fließtext in
+      # Ruhe, statt Absätze auf printWidth (160) neu umzubrechen. Listen,
+      # Tabellen und Code-Blöcke werden weiterhin formatiert.
+      proseWrap: preserve
   - files: "*.xml"
     options:
       bracketSameLine: true
