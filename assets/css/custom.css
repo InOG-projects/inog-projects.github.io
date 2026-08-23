@@ -41,3 +41,19 @@
 .text-end {
   text-align: end;
 }
+
+/* Absatzabstand im Fließtext-Bereich.
+
+   Der Webflow-Export setzt global `p { margin-bottom: 0 }`
+   (inog-website.webflow.css:216). Solange Absätze mit `<br> <br>` erzeugt
+   wurden, fiel das nicht auf. Seit Impressum & Co. echte `<p>`-Elemente aus
+   Markdown erzeugen, klebten die Absätze ohne Abstand aneinander.
+
+   Bewusst auf .content-box begrenzt: dieser Container existiert nur im
+   `default`-Layout, also genau auf den Markdown-Seiten (Impressum, Kontakt,
+   Veröffentlichungen, 404). Die Webflow-Seiten (Startseite, Projekte) nutzen
+   das `home`-Layout ohne .content-box und bleiben damit unberührt — eine
+   weiter gefasste Regel auf .block-content hat dort das Layout verschoben. */
+.content-box p {
+  margin-bottom: 1em;
+}
