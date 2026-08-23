@@ -9,3 +9,4 @@ and link them below.
 - [csp-policy.md](csp-policy.md) — the meta-tag CSP: what it allows and why, and what can't be enforced this way
 - [seo-and-metadata.md](seo-and-metadata.md) — SEO/metadata decisions (German-only, no JSON-LD, canonical/feed)
 - [finding-unused-assets.md](finding-unused-assets.md) — how to check if an image/PDF/CSS class is really unused (and the srcset / URL-encoding traps)
+- [webflow-css-traps.md](webflow-css-traps.md) — warum Markdown-Absätze ohne Abstand rendern, und warum `<br>` im Adressblock bleiben muss
