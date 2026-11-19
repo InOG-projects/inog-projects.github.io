@@ -2,7 +2,7 @@
 
 ## How the site is built and deployed
 
-- Deployed via **GitHub Actions** (`.github/workflows/jekyll.yml`) running `bundle exec jekyll build`, **not** the `github-pages` gem (it is commented out in
+- Deployed via **GitHub Actions** (`.github/workflows/jekyll.yml`) running `bundle exec jekyll build` then `npm run purge-css`, **not** the `github-pages` gem (it is commented out in
   the `Gemfile`). Consequence: the site is **not** restricted to the GitHub Pages plugin allowlist — any Jekyll plugin listed in the `Gemfile` + `_config.yml`
   `plugins:` works. (The old `whitelist:` block was removed as dead config.)
 - PRs are gated by `.github/workflows/ci.yml`: build → PurgeCSS → html-proofer → pa11y (non-blocking) → prettier. `_site/` is built during CI, so anything that

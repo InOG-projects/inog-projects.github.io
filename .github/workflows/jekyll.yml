@@ -51,6 +51,19 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: "npm"
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      # Same step as ci.yml: ship the purged CSS that CI checked, not the full Webflow export.
+      - name: Purge unused CSS
+        run: npm run purge-css
+
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v5
