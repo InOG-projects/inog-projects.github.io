@@ -20,6 +20,7 @@ Two false-positive traps that made me nearly flag _used_ files as orphans:
   `<pdf files on disk>` — all 13 documents/ PDFs are in fact linked in `veroeffentlichungen.md`.
 
 Also note: dead Webflow CSS (unused `w-icon-*`, `w-lightbox-*` rules and their embedded `data:` fonts/images) is stripped from production by PurgeCSS, so it
-never reaches users even when left in the source `assets/css/`.
+never reaches users even when left in the source `assets/css/`. This holds only because the deploy workflow (`jekyll.yml`) runs `npm run purge-css`; until
+2026-11 only `ci.yml` did, and the live site shipped the full 127 KB Webflow CSS. Check the live file size, not this note.
 
 Decision on file (2026-07): the maintainer chose NOT to delete orphaned image files despite ~4 MB being unused. Don't propose asset deletion again unless asked.
